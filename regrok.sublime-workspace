@@ -1,0 +1,2208 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dec",
+				"decrypted_contents"
+			],
+			[
+				"has",
+				"hashed_password"
+			],
+			[
+				"encrypt",
+				"encrypted_contents"
+			],
+			[
+				"testli",
+				"testlicenses"
+			],
+			[
+				"lis",
+				"listeners"
+			],
+			[
+				"React",
+				"ReactRouter"
+			],
+			[
+				"getRo",
+				"getRowRef"
+			],
+			[
+				"col",
+				"columnMetadata"
+			],
+			[
+				"std",
+				"stdout〔variable〕"
+			],
+			[
+				"iter",
+				"itertools"
+			],
+			[
+				"maxNo",
+				"maxNodeWidth〔variable〕"
+			],
+			[
+				"set",
+				"setCredentials"
+			],
+			[
+				"change",
+				"changeInfo"
+			],
+			[
+				"botto",
+				"bottomIndex"
+			],
+			[
+				"bottom",
+				"bottomWeight"
+			],
+			[
+				"Favo",
+				"Favorites"
+			],
+			[
+				"finish",
+				"finished_lock"
+			],
+			[
+				"inprog",
+				"inprogress_lock"
+			],
+			[
+				"write",
+				"write_statement"
+			],
+			[
+				"HTTP_4",
+				"HTTP_400_BAD_REQUEST  (variable)"
+			],
+			[
+				"group",
+				"groups  (function)"
+			],
+			[
+				"uuid",
+				"uuid4  (function)"
+			],
+			[
+				"Choose",
+				"ChooseDatabaseViewModel"
+			],
+			[
+				"obser",
+				"observableArray"
+			],
+			[
+				"fil",
+				"filteredEntries"
+			],
+			[
+				"filt",
+				"filteredEntries"
+			],
+			[
+				"get",
+				"getCredentials"
+			],
+			[
+				"cipher",
+				"ciphertext"
+			],
+			[
+				"refres",
+				"refreshDatabase"
+			],
+			[
+				"is",
+				"isAuthenticated"
+			],
+			[
+				"auth",
+				"authenticate"
+			],
+			[
+				"chrome",
+				"chrome_oauth_receiver"
+			],
+			[
+				"encryp",
+				"encryption_iv"
+			],
+			[
+				"create",
+				"createCipher"
+			],
+			[
+				"par",
+				"passwordHash"
+			],
+			[
+				"number",
+				"number_of_groups"
+			],
+			[
+				"sele",
+				"selectedFile"
+			],
+			[
+				"selecte",
+				"selectedFile"
+			],
+			[
+				"select",
+				"selectedFile"
+			],
+			[
+				"buffer",
+				"buffers"
+			],
+			[
+				"succ",
+				"successiveSpeechCount"
+			],
+			[
+				"spectral",
+				"spectralFlatnessDifference"
+			],
+			[
+				"sum",
+				"sumOfSquares"
+			],
+			[
+				"ener",
+				"energyDifference  (variable)"
+			],
+			[
+				"domina",
+				"dominantFrequency"
+			],
+			[
+				"len",
+				"length-1"
+			],
+			[
+				"spec",
+				"spectralslope"
+			],
+			[
+				"log",
+				"log10  (function)"
+			],
+			[
+				"po",
+				"exp  (function)"
+			],
+			[
+				"freq",
+				"frequencies"
+			],
+			[
+				"arit",
+				"arithmeticMean"
+			],
+			[
+				"spe",
+				"spectrum"
+			],
+			[
+				"dom",
+				"dominantFrequencyThreshold  (variable)"
+			],
+			[
+				"param",
+				"parameter"
+			],
+			[
+				"PRIMARY_",
+				"PRIMARY_DOMINANT_FREQUENCY_THRESHOLD"
+			],
+			[
+				"PRIMAR",
+				"PRIMARY_ENERGY_THRESHOLD"
+			],
+			[
+				"domin",
+				"dominantFrequencyThreshold"
+			],
+			[
+				"min",
+				"minDominantFrequency"
+			],
+			[
+				"energ",
+				"energyThreshold"
+			],
+			[
+				"PRIMA",
+				"PRIMARY_SPECTRAL_FLATNESS_THRESHOLD"
+			],
+			[
+				"PRIMARY",
+				"PRIMARY_DOMINANT_FREQUENCY_THRESHOLD"
+			],
+			[
+				"ene",
+				"energyThreshold"
+			],
+			[
+				"go",
+				"geometricMean"
+			],
+			[
+				"geometric",
+				"geometricMean"
+			],
+			[
+				"ob",
+				"observable"
+			],
+			[
+				"obs",
+				"observableArray"
+			],
+			[
+				"largest",
+				"largestFrequency"
+			],
+			[
+				"calc",
+				"calculateFFTAverage"
+			],
+			[
+				"runnin",
+				"runningAverages"
+			],
+			[
+				"audio",
+				"audioCtx"
+			],
+			[
+				"Company",
+				"CompanyItemSerializer"
+			],
+			[
+				"Retri",
+				"RetrieveAPIView  (class)"
+			],
+			[
+				"observa",
+				"observableArray"
+			],
+			[
+				"compan",
+				"company_items"
+			],
+			[
+				"ampl",
+				"amplitude_tuples"
+			],
+			[
+				"ampli",
+				"amplitudes"
+			],
+			[
+				"import",
+				"import_book_from_directory  (function)"
+			],
+			[
+				"Flas",
+				"FlashCardManager"
+			],
+			[
+				"Compan",
+				"CompanyItem"
+			],
+			[
+				"Inv",
+				"InvoiceDetail  (class)"
+			],
+			[
+				"Invoi",
+				"Invoice  (class)"
+			],
+			[
+				"load",
+				"loadInventory"
+			],
+			[
+				"fetchIn",
+				"fetchInventoryAudits"
+			],
+			[
+				"avai",
+				"availableBooks"
+			],
+			[
+				"upload",
+				"upload-flashcards"
+			],
+			[
+				"ca",
+				"cards"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"cateo",
+				"categorizedShuffle"
+			],
+			[
+				"read",
+				"readline  (function)"
+			],
+			[
+				"flash",
+				"flashcard"
+			],
+			[
+				"flashcar",
+				"flashcards"
+			],
+			[
+				"ran",
+				"random"
+			],
+			[
+				"random",
+				"randomize_groups"
+			],
+			[
+				"flashca",
+				"flashcards"
+			],
+			[
+				"ordere",
+				"ordered_keys"
+			],
+			[
+				"o",
+				"ordered_keys"
+			],
+			[
+				"seri",
+				"serializer"
+			],
+			[
+				"invoice",
+				"invoices"
+			],
+			[
+				"in",
+				"invoices"
+			],
+			[
+				"invoi",
+				"invoicedetail"
+			],
+			[
+				"Member",
+				"MembershipSerializer"
+			],
+			[
+				"pass",
+				"password1"
+			],
+			[
+				"passwor",
+				"password2"
+			],
+			[
+				"selected",
+				"selectedInvoices"
+			],
+			[
+				"Client",
+				"ClientSerializer"
+			],
+			[
+				"array",
+				"arrayMap"
+			],
+			[
+				"_",
+				"  :param _body_style: One of ``('bare', 'wrapped')``. Default: ``'wrapped'``."
+			],
+			[
+				"arrayF",
+				"arrayForEach"
+			],
+			[
+				"lo",
+				"logout  (function)"
+			],
+			[
+				"fab",
+				"fabfile_nginx  (module)"
+			],
+			[
+				"qbwc",
+				"qbwc-service"
+			],
+			[
+				"deta",
+				"details_data"
+			],
+			[
+				"data",
+				"dataleap"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"assert",
+				"assertEqual  (function)"
+			],
+			[
+				"mak",
+				"makedirs  (function)"
+			],
+			[
+				"date",
+				"datetime  (class)"
+			],
+			[
+				"Te",
+				"TemplateView  (class)"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"backgrou",
+				"background-position"
+			],
+			[
+				"ven",
+				"vendor_set"
+			],
+			[
+				"fabfile",
+				"fabfile.centos65  (module)"
+			],
+			[
+				"IN",
+				"InvoiceDetail  (class)"
+			],
+			[
+				"details",
+				"invoice-details-selection"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"static",
+				"static_files_dir"
+			],
+			[
+				"acti",
+				"activation_key"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/views/app.js",
+			"settings":
+			{
+				"buffer_size": 404,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 31524 files for \"/entries\"\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/node_modules/babel-core/browser.js:\n 28932:       \"entries\": \"array/entries\",\n 28969:       \"entries\": \"object/entries\",\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/node_modules/babel-plugin-runtime/lib/definitions.json:\n   15:       \"entries\": \"array/entries\",\n   52:       \"entries\": \"object/entries\",\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/node_modules/babel-runtime/core-js/array/entries.js:\n    1: module.exports = { \"default\": require(\"core-js/library/fn/array/entries\"), __esModule: true };\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/node_modules/babel-runtime/core-js/object/entries.js:\n    1: module.exports = { \"default\": require(\"core-js/library/fn/object/entries\"), __esModule: true };\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/public/built/bundle.js:\n 3503: 	eval(\"/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */\\\"use strict\\\";\\n\\nif (true) {\\n  (function () {\\n    var ReactHotAPI = __webpack_require__(5),\\n        RootInstanceProvider = __webpack_require__(13),\\n        ReactMount = __webpack_require__(15),\\n        React = __webpack_require__(68);module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {\\n      return RootInstanceProvider.getRootInstances(ReactMount);\\n    }, React);\\n  })();\\n}try {\\n  (function () {\\n\\n    var History = __webpack_require__(170).History,\\n        Markdown = __webpack_require__(497),\\n        Panel = __webpack_require__(218).Panel,\\n        Pick = __webpack_require__(511),\\n        React = __webpack_require__(512),\\n        Reflux = __webpack_require__(446),\\n        Router = __webpack_require__(170).Router,\\n        Uuid = __webpack_require__(530);\\n\\n    var actions = __webpack_require__(465),\\n        store = __webpack_require__(469),\\n        formats = __webpack_require__(531),\\n        Griddy = __webpack_require__(619);\\n\\n    module.exports = React.createClass({\\n      displayName: \\\"exports\\\",\\n\\n      mixins: [History, Reflux.listenTo(store, \\\"onLoad\\\")],\\n      getInitialState: function getInitialState() {\\n        return {\\n          \\\"entries\\\": []\\n        };\\n      },\\n      componentDidMount: function componentDidMount() {\\n        actions.load();\\n      },\\n      onLoad: function onLoad(entries) {\\n        this.setState({\\n          \\\"entries\\\": entries\\n        });\\n      },\\n      render: function render() {\\n        var self = this;\\n\\n        return React.createElement(Griddy, {\\n          data: this.state.entries,\\n          order: [\\\"name\\\", \\\"ctime\\\", \\\"mtime\\\"],\\n          onEntryAdd: function (entry) {\\n            self.history.pushState(null, \\\"/entries\\\");\\n          },\\n          onEntryDelete: function (entry) {\\n            actions.removeEntry(entry.id);\\n          },\\n          onEntryView: function (entry) {\\n            self.history.pushState(null, \\\"/entries/\\\" + entry.id);\\n          },\\n          columnMetadata: {\\n            \\\"ctime\\\": {\\n              \\\"header\\\": \\\"Created\\\",\\n              \\\"transformation\\\": formats.DateTimeTransformation\\n            },\\n            \\\"mtime\\\": {\\n              \\\"header\\\": \\\"Updated\\\",\\n              \\\"transformation\\\": formats.DateTimeTransformation\\n            },\\n            \\\"name\\\": {\\n              \\\"header\\\": \\\"Name\\\",\\n              \\\"transformation\\\": formats.MarkdownTransformation\\n            }\\n          } });\\n      }\\n    });\\n\\n    /* REACT HOT LOADER */\\n  }).call(undefined);\\n} finally {\\n  if (true) {\\n    (function () {\\n      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {\\n        var makeExportsHot = __webpack_require__(466);if (makeExportsHot(module, __webpack_require__(68))) {\\n          foundReactClasses = true;\\n        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {\\n          module.hot.accept(function (err) {\\n            if (err) {\\n              console.error(\\\"Cannot not apply hot update to \\\" + \\\"list.js\\\" + \\\": \\\" + err.message);\\n            }\\n          });\\n        }\\n      }module.hot.dispose(function (data) {\\n        data.makeHot = module.makeHot;data.foundReactClasses = foundReactClasses;\\n      });\\n    })();\\n  }\\n}\\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))\\n\\n/*****************\\n ** WEBPACK FOOTER\\n ** ./src/views/journals/list.js\\n ** module id = 496\\n ** module chunks = 0\\n **/\\n//# sourceURL=webpack:///./src/views/journals/list.js?\");\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/src/views/journals/list.js:\n   39:           self.history.pushState(null, \"/entries\");\n   45:           self.history.pushState(null, \"/entries/\" + entry.id);\n\n/Users/abe/Dropbox/Projects/regrok/node_modules/babel-core/browser.js:\n 28932:       \"entries\": \"array/entries\",\n 28969:       \"entries\": \"object/entries\",\n\n/Users/abe/Dropbox/Projects/regrok/node_modules/babel-plugin-runtime/lib/definitions.json:\n   15:       \"entries\": \"array/entries\",\n   52:       \"entries\": \"object/entries\",\n\n/Users/abe/Dropbox/Projects/regrok/node_modules/babel-runtime/core-js/array/entries.js:\n    1: module.exports = { \"default\": require(\"core-js/library/fn/array/entries\"), __esModule: true };\n\n/Users/abe/Dropbox/Projects/regrok/node_modules/babel-runtime/core-js/object/entries.js:\n    1: module.exports = { \"default\": require(\"core-js/library/fn/object/entries\"), __esModule: true };\n\n/Users/abe/Dropbox/Projects/regrok/public/built/bundle.js:\n 3503: 	eval(\"/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */\\\"use strict\\\";\\n\\nif (true) {\\n  (function () {\\n    var ReactHotAPI = __webpack_require__(5),\\n        RootInstanceProvider = __webpack_require__(13),\\n        ReactMount = __webpack_require__(15),\\n        React = __webpack_require__(68);module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {\\n      return RootInstanceProvider.getRootInstances(ReactMount);\\n    }, React);\\n  })();\\n}try {\\n  (function () {\\n\\n    var History = __webpack_require__(170).History,\\n        Markdown = __webpack_require__(497),\\n        Panel = __webpack_require__(218).Panel,\\n        Pick = __webpack_require__(511),\\n        React = __webpack_require__(512),\\n        Reflux = __webpack_require__(446),\\n        Router = __webpack_require__(170).Router,\\n        Uuid = __webpack_require__(530);\\n\\n    var actions = __webpack_require__(465),\\n        store = __webpack_require__(469),\\n        formats = __webpack_require__(531),\\n        Griddy = __webpack_require__(619);\\n\\n    module.exports = React.createClass({\\n      displayName: \\\"exports\\\",\\n\\n      mixins: [History, Reflux.listenTo(store, \\\"onLoad\\\")],\\n      getInitialState: function getInitialState() {\\n        return {\\n          \\\"entries\\\": []\\n        };\\n      },\\n      componentDidMount: function componentDidMount() {\\n        actions.load();\\n      },\\n      onLoad: function onLoad(entries) {\\n        this.setState({\\n          \\\"entries\\\": entries\\n        });\\n      },\\n      render: function render() {\\n        var self = this;\\n\\n        return React.createElement(Griddy, {\\n          data: this.state.entries,\\n          order: [\\\"name\\\", \\\"ctime\\\", \\\"mtime\\\"],\\n          onEntryAdd: function (entry) {\\n            self.history.pushState(null, \\\"/entries\\\");\\n          },\\n          onEntryDelete: function (entry) {\\n            actions.removeEntry(entry.id);\\n          },\\n          onEntryView: function (entry) {\\n            self.history.pushState(null, \\\"/entries/\\\" + entry.id);\\n          },\\n          columnMetadata: {\\n            \\\"ctime\\\": {\\n              \\\"header\\\": \\\"Created\\\",\\n              \\\"transformation\\\": formats.DateTimeTransformation\\n            },\\n            \\\"mtime\\\": {\\n              \\\"header\\\": \\\"Updated\\\",\\n              \\\"transformation\\\": formats.DateTimeTransformation\\n            },\\n            \\\"name\\\": {\\n              \\\"header\\\": \\\"Name\\\",\\n              \\\"transformation\\\": formats.MarkdownTransformation\\n            }\\n          } });\\n      }\\n    });\\n\\n    /* REACT HOT LOADER */\\n  }).call(undefined);\\n} finally {\\n  if (true) {\\n    (function () {\\n      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {\\n        var makeExportsHot = __webpack_require__(466);if (makeExportsHot(module, __webpack_require__(68))) {\\n          foundReactClasses = true;\\n        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {\\n          module.hot.accept(function (err) {\\n            if (err) {\\n              console.error(\\\"Cannot not apply hot update to \\\" + \\\"list.js\\\" + \\\": \\\" + err.message);\\n            }\\n          });\\n        }\\n      }module.hot.dispose(function (data) {\\n        data.makeHot = module.makeHot;data.foundReactClasses = foundReactClasses;\\n      });\\n    })();\\n  }\\n}\\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))\\n\\n/*****************\\n ** WEBPACK FOOTER\\n ** ./src/views/journals/list.js\\n ** module id = 496\\n ** module chunks = 0\\n **/\\n//# sourceURL=webpack:///./src/views/journals/list.js?\");\n\n/Users/abe/Dropbox/Projects/regrok/src/views/journals/edit.js:\n   66:     this.history.pushState(null, \"/entries\");\n\n/Users/abe/Dropbox/Projects/regrok/src/views/journals/list.js:\n   45:           self.history.pushState(null, \"/entries/\" + entry.id);\n\n20 matches across 13 files\n",
+			"settings":
+			{
+				"buffer_size": 9801,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "src/views/journals/list.js",
+			"settings":
+			{
+				"buffer_size": 1720,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/manage.js",
+			"settings":
+			{
+				"buffer_size": 873,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Remove package",
+				"Package Control: Remove Package"
+			],
+			[
+				"package control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"package: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"",
+				"Preferences: Browse Packages"
+			],
+			[
+				"XML",
+				"Indent XML"
+			],
+			[
+				"JSON",
+				"Indent JSON"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"JOSN",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"format",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"Package Control",
+				"Package Control: List Packages"
+			],
+			[
+				"Package",
+				"Package Control: Disable Package"
+			],
+			[
+				"Javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"InstallPa",
+				"Package Control: Install Package"
+			],
+			[
+				"INstall",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/abe/Dropbox/Projects/regrok/src/views/journals/edit.js",
+		"/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/src/views/journals/list.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/config/loader.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/stores/encrypted_file.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/journals/list.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/manage.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/stores/file.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/login.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/crypt/index.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/config/index.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/journals/initializer.js",
+		"/Users/abe/Dropbox/Projects/regrok/main.js",
+		"/Users/abe/Dropbox/Projects/regrok/Gruntfile.js",
+		"/Users/abe/Dropbox/Projects/regrok/README.md",
+		"/Users/abe/Dropbox/Projects/regrok/webpack.config.js",
+		"/Users/abe/Dropbox/Projects/regrok/public/dev.html",
+		"/Users/abe/Dropbox/Projects/regrok/package.json",
+		"/Users/abe/Dropbox/Projects/regrok/node_modules/nconf/lib/nconf.js",
+		"/Users/abe/Dropbox/Projects/regrok/public/prod.html",
+		"/Users/abe/Dropbox/Projects/regrok/public/index.html",
+		"/Users/abe/Dropbox/Projects/regrok/.gitignore",
+		"/Users/abe/Dropbox/Projects/regrok/Gruntfile",
+		"/Users/abe/Dropbox/Projects/regrok/ReGrok-darwin-x64/version",
+		"/Users/abe/Dropbox/Projects/regrok/ReGrok-darwin-x64/ReGrok.app/Contents/Info.plist",
+		"/Users/abe/Dropbox/Projects/regrok/ReGrok-darwin-x64/ReGrok.app/Contents/MacOS/Electron",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/stores/encrypted_file.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/package.json",
+		"/Users/abe/Dropbox/Projects/Journals/journal/main.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/index.html",
+		"/Users/abe/Dropbox/Projects/Journals/journal/public/index.html",
+		"/Users/abe/Dropbox/Projects/Journals/journal/webpack.config.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/.gitignore",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/config/loader.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/crypt/index.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/data.enc.json",
+		"/Users/abe/Dropbox/Projects/Journals/journal/data.json",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/views/journals/list.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/views/app.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/manage.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/stores/file.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/actions/index.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/stores/index.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/views/griddy/index.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/views/journals/formats.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/app.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/formats.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/config/index.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/views/journals/edit.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/views/journals/entry.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/build/journals.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/views/griddy.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/griddy.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/journals.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/repo.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/journal.sublime-workspace",
+		"/Users/abe/Dropbox/Projects/Journals/journal/journal.sublime-project",
+		"/Users/abe/Desktop/test.py",
+		"/Users/abe/Downloads/katex/contrib/fonts/KaTeX_AMS-Regular.woff2",
+		"/Users/abe/Downloads/katex/contrib/fonts/KaTeX_AMS-Regular.woff",
+		"/Users/abe/Downloads/katex/contrib/fonts/KaTeX_AMS-Regular.eot",
+		"/Users/abe/Downloads/katex/contrib/fonts/KaTeX_AMS-Regular.ttf",
+		"/Users/abe/Downloads/katex/katex.min.css",
+		"/Users/abe/Dropbox/Projects/Journals/journal/node_modules/react/dist/react-with-addons.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/node_modules/react/dist/react.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/node_modules/react-router/UPGRADE_GUIDE.md",
+		"/Users/abe/Dropbox/Projects/Journals/journal/node_modules/react/addons.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/actions.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/node_modules/react-router/umd/ReactRouter.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/App.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/node_modules/react-router/modules/Router.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/formatters.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/src/table.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/journals.js",
+		"/Users/abe/Dropbox/Projects/Journals/journal/saved.js",
+		"/Users/abe/Desktop/numbers",
+		"/private/tmp/rtest/hello.rs",
+		"/Users/abe/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/abe/Desktop/ponderthis2.py",
+		"/Users/abe/Desktop/ponderthis6.py",
+		"/Users/abe/Desktop/ponderthis5.py",
+		"/Users/abe/Desktop/ponderthis4.py",
+		"/Users/abe/Desktop/ponderthis3.py",
+		"/private/tmp/django-common/django_common/contrib/st/management/commands/runtornado.py",
+		"/Users/abe/Dropbox/Projects/getabe/web/flashcards/templates/flashcards/flashcards.html",
+		"/Users/abe/Dropbox/Projects/getabe/web/flashcards/urls.py",
+		"/Users/abe/Dropbox/Projects/getabe/web/templates/base.html",
+		"/Users/abe/Dropbox/Projects/getabe/web/flashcards/models.py",
+		"/Users/abe/Dropbox/Projects/getabe/web/flashcards/api.py",
+		"/Users/abe/Dropbox/Projects/getabe/web/flashcards/static/js/flashcards.js",
+		"/Users/abe/Dropbox/Projects/getabe/web/flashcards/templates/flashcards/flashcards_part.html",
+		"/Users/abe/Movies/rainy day/xvideos.txt",
+		"/Users/abe/Dropbox/Projects/getabe/web/urls.py",
+		"/Users/abe/Dropbox/Projects/getabe/web/settings.py",
+		"/Users/abe/Dropbox/Projects/getabe/web/static/src/js/pinyin_converter.js",
+		"/Users/abe/Dropbox/Projects/getabe/web/flashcards/templates/flashcards/index.html",
+		"/Users/abe/Dropbox/Projects/getabe/fabfile_nginx.py",
+		"/Users/abe/Dropbox/Projects/getabe/web/lib/views.py",
+		"/Users/abe/Dropbox/Projects/getabe/web/templates/page.html",
+		"/private/tmp/test.go",
+		"/private/tmp/Test.java",
+		"/private/tmp/test.c",
+		"/Users/abe/Desktop/d3/miserables.extra-small.json",
+		"/Users/abe/Desktop/d3/force.html",
+		"/Users/abe/Desktop/d3/tree.html",
+		"/Users/abe/Desktop/d3/miserables.small.json",
+		"/Users/abe/Desktop/d3/index.html",
+		"/Users/abe/Desktop/d3/miserables.json",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/js/jquery.csrf.js",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/manifest.json",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/options/index.html",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/options/index.js",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/bg/background.js",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/js/jquery.cookie.js",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/content/login.html",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/content/login.js",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/bg/hello.min.js",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/content/jquery.min.js",
+		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/content/url.js",
+		"/Users/abe/Downloads/jquery-2.1.3.min.js",
+		"/Users/abe/Dropbox/Projects/Precall/Precall/history/serializers.py",
+		"/Users/abe/Dropbox/Projects/Precall/Precall/history/models.py",
+		"/Users/abe/Dropbox/Projects/Precall/Precall/history/migrations/0001_initial.py",
+		"/Users/abe/Dropbox/Projects/precall/website/website/templates/favorites.html",
+		"/Users/abe/Dropbox/Projects/precall/website/website/templates/index.html",
+		"/Users/abe/Dropbox/Projects/precall/website/favorites/models.py",
+		"/Users/abe/Dropbox/Projects/precall/website/accounts/__init__.py",
+		"/Users/abe/Dropbox/Projects/precall/website/website/settings.py",
+		"/Users/abe/Dropbox/Projects/precall/website/favorites/migrations/0002_auto_20141214_2256.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/Users/abe/Dropbox/Projects/regrok/node_modules/nconf",
+			"",
+			"*.js",
+			"*.html",
+			"*.py",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"",
+			"*.html",
+			"*.py",
+			"*.html",
+			"",
+			"/Users/abe/Dropbox/Private/work/DataLeap/thirdparty/spyne",
+			"",
+			"*.html",
+			"",
+			"/Users/abe/Dropbox/Private/work/DataLeap/projects",
+			"projects",
+			"",
+			"*.html",
+			"*.js",
+			"",
+			"*.py",
+			"*.js",
+			"",
+			"/Users/abe/Dropbox/Private/work/DataLeap/projects/web",
+			"/Users/abe/Dropbox/Private/work/DataLeap/vendors/usfoods/invoices",
+			"",
+			"/Users/abe/Dropbox/Private/work/DataLeap/,*.js",
+			"/Users/abe/Dropbox/Private/work/DataLeap/,*.html",
+			"/Users/abe/Dropbox/Private/work/DataLeap/",
+			"/Users/abe/Dropbox/Private/work/DataLeap/projects",
+			"/Users/abe/Dropbox/Private/work/DataLeap/projects/web",
+			"",
+			"*/*.html",
+			"*/*.js",
+			"/Users/abe/Dropbox/Private/work/DataLeap/projects",
+			"/Users/abe/Dropbox/Private/work/DataLeap/",
+			"/Users/abe/Dropbox/Private/work/DataLeap/projects",
+			"/Users/abe/Dropbox/Private/work/DataLeap/projects/common/dataleap_common",
+			"",
+			"/Users/abe/Dropbox/Private/work/DataLeap/thirdparty/django-rest-framework",
+			"",
+			"/Users/abe/Dropbox/Private/work/DataLeap/thirdparty/Django-1.5",
+			"/Users/abe/Dropbox/Private/work/DataLeap/",
+			"/Users/abe/Dropbox/Private/work/DataLeap/third*/Dj*",
+			"/Users/abe/Dropbox/Private/work/DataLeap/projects/bots-3.1.0-custom",
+			"",
+			"/Users/abe/Dropbox/Private/work/DataLeap/library/kosher",
+			"",
+			"/Users/abe/Dropbox/work/DataLeap/",
+			"/Users/abe/Dropbox/work/DataLeap/projects",
+			"/Users/abe/Dropbox/work/DataLeap",
+			"/Users/abe/Dropbox/work/DataLeap/projects/",
+			"/Users/abe/Dropbox/work/DataLeap/projects/web",
+			"/Users/abe/Dropbox/work/DataLeap/thirdparty/django-rest-framework",
+			"/Users/abe/Dropbox/work/DataLeap/",
+			"/Users/abe/Dropbox/work/DataLeap/projects/web",
+			"",
+			"/Users/abe/Dropbox/work/Personal/KeePassX/extensions/chrome/0.1.0/lib/crypto-js/components",
+			"",
+			"/Users/abe/Dropbox/work/DataLeap/",
+			"/Users/abe/Dropbox/work/DataLeap/projects",
+			"/Users/abe/Dropbox/work/DataLeap/",
+			"/Users/abe/Dropbox/work/DataLeap/library/dataleap-common",
+			"/Users/abe/Dropbox/work/DataLeap/projects/web",
+			"/Users/abe/Dropbox/work/DataLeap/",
+			"/Users/abe/Dropbox/work/DataLeap/projects/",
+			"/Users/abe/Dropbox/work/DataLeap/projects/api",
+			"",
+			"/Users/abe/Dropbox/work/DataLeap/thirdparty/django-rest-framework",
+			"",
+			"/Users/abe/Dropbox/work/DataLeap/library/django-common",
+			"/Users/abe/Dropbox/work/DataLeap/projects/api",
+			"/Users/abe/Dropbox/work/DataLeap/projects",
+			"",
+			"/Users/abe/Dropbox/work/DataLeap/projects",
+			"",
+			"/Users/abe/Dropbox/work/DataLeap/projects",
+			"",
+			"/Users/abe/Dropbox/work/DataLeap/library/django-common",
+			"",
+			"/Users/abe/Dropbox/work/DataLeap/projects/web",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/entries",
+			"this.entries",
+			"actions",
+			"store",
+			"end()",
+			"this",
+			"Pick",
+			"formats",
+			"Link",
+			"Nav",
+			"NavBar",
+			"NavItem",
+			"Route",
+			"Router",
+			"debug",
+			"readdirSync",
+			"nconf/stores",
+			"dist",
+			"message",
+			"0.34.2",
+			"0.34",
+			"packageConfig",
+			"electron",
+			".",
+			"webpack",
+			"path",
+			"electron-prebuilt",
+			"regrok",
+			"index.html",
+			"index",
+			"test",
+			"salt",
+			"Bcrypt",
+			"crypto:",
+			"crypto",
+			"config",
+			"bcrypt",
+			"conf",
+			"conf.",
+			"full_encrypted_contents",
+			"config",
+			"actions",
+			"crypt",
+			"config",
+			"actions",
+			"repository:file",
+			"store",
+			"onLoad",
+			"file",
+			"./file",
+			"CommonJS",
+			"common",
+			"node",
+			"readFileSync",
+			"readdirSync",
+			"../store",
+			"..store",
+			"../../store",
+			"view/",
+			"babel",
+			"repo.js",
+			"modules.exports",
+			"module.export",
+			"History",
+			"Reflux",
+			"Griddy",
+			";\n",
+			"DateTimeTransformation",
+			"Panel",
+			"MarkdownTransformation",
+			"Markdown",
+			"Input",
+			"Button",
+			"Router",
+			"Uuid",
+			"Input",
+			"Button",
+			"Router",
+			"React",
+			"Pick",
+			"Panel",
+			"Journal",
+			"self",
+			"path",
+			"self.data",
+			"cb",
+			"listen",
+			"$this",
+			"parts",
+			".js",
+			"katex",
+			"History",
+			"Navigation",
+			"Mixins",
+			"History",
+			"Journal.Views.Entry",
+			"addons",
+			"onRowDelete",
+			"Moment",
+			"connectToRepo",
+			"entries",
+			"console",
+			"Repo",
+			"Link",
+			"IndexLink",
+			"createElement",
+			"Link",
+			"Moment",
+			"NavItem",
+			"Uuid",
+			"bootstrap.",
+			"bootstrap",
+			"uuid",
+			"fs",
+			"Bootstrap",
+			"Router",
+			"jquery",
+			"Entry",
+			"Repo",
+			"getInit",
+			"selected",
+			"items",
+			"selectedItems",
+			"...",
+			"]",
+			"...",
+			"getOrderedRowData",
+			"repo"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"repository:crypto:",
+			"Config",
+			"Actions",
+			"Crypt",
+			"Config",
+			"Actions",
+			"repository:encrypted_file",
+			"../../stores",
+			"self",
+			"",
+			"getOrderedRowData",
+			"React",
+			"graph",
+			"tracks",
+			"",
+			" ",
+			"kpio",
+			"tones",
+			"SAMPLE_SIZE",
+			"audit_kwargs",
+			"company_item_kwargs",
+			"dataleapweb",
+			"dataleaplanding",
+			"//",
+			"\"\\1\": \"\",",
+			"\"\\1\": \"\\2\",",
+			"\"\\1\": \"\\2\"",
+			"\\2\\t\\1",
+			"",
+			"\\t\\1\\n",
+			"\\t\\1",
+			"\\t",
+			"\\t\\1",
+			"\\t",
+			"getabe",
+			"\\1, \\2",
+			": ",
+			",",
+			"getabe",
+			"",
+			"action=destroy",
+			"!",
+			"availableTags",
+			"tags",
+			"bundle",
+			"availableTags",
+			"availableBundles",
+			"tags",
+			"tag",
+			"bundle",
+			"pack",
+			"self.availableSubjects",
+			"self.availableCategories",
+			"categorize",
+			"shuffled_questions",
+			"cvendor",
+			"",
+			"setError('missing')",
+			"'type': 'int'",
+			"'member':",
+			"$.extend(true, {}, ",
+			"invoice",
+			"validationElement: $1",
+			"vendor",
+			"client",
+			"user",
+			"!$1",
+			"isValid()",
+			".isValid",
+			"'required': true",
+			"client().",
+			"user().",
+			"validate",
+			"",
+			";",
+			"",
+			".extend({'validate.required': null})",
+			"invoicedetail",
+			"",
+			"password.password2",
+			"password.password1",
+			"",
+			"btn-xs",
+			"",
+			">",
+			"<",
+			"vendor",
+			"vendore",
+			"vendor",
+			"env.user",
+			"details",
+			"audits",
+			"{{ _(\"",
+			"\") }}",
+			"{{ _(\"",
+			"form",
+			"col-lg-4 control-label",
+			"",
+			"$1",
+			"notify_admins_content",
+			"DATA_DIR",
+			"%s",
+			"Vendor",
+			"fa fa-",
+			"number",
+			"ko.utils.unwrapObservable",
+			" ",
+			"",
+			"vendors",
+			"<li>{{ _('",
+			"') }}</li>",
+			"') }}</p>",
+			"<p>{{ _('",
+			"{{ _('",
+			"\\n",
+			"",
+			"href=\"/static/css",
+			"src=\"/static/css",
+			"src=\"/static/js",
+			" src=\"/static/js",
+			" ",
+			"\\n",
+			"",
+			"aa Lorem",
+			"href=\"#\"",
+			"",
+			"setup_all",
+			"xxl-button"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/views/app.js",
+					"settings":
+					{
+						"buffer_size": 404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								339,
+								339
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"devel": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": "load-save",
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 9801,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										197,
+										205
+									],
+									[
+										240,
+										248
+									],
+									[
+										430,
+										438
+									],
+									[
+										472,
+										480
+									],
+									[
+										699,
+										707
+									],
+									[
+										949,
+										957
+									],
+									[
+										2934,
+										2942
+									],
+									[
+										3151,
+										3159
+									],
+									[
+										4964,
+										4972
+									],
+									[
+										5023,
+										5031
+									],
+									[
+										5150,
+										5158
+									],
+									[
+										5193,
+										5201
+									],
+									[
+										5326,
+										5334
+									],
+									[
+										5368,
+										5376
+									],
+									[
+										5538,
+										5546
+									],
+									[
+										5731,
+										5739
+									],
+									[
+										7659,
+										7667
+									],
+									[
+										7876,
+										7884
+									],
+									[
+										9626,
+										9634
+									],
+									[
+										9749,
+										9757
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								9751,
+								9751
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 428.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/views/journals/list.js",
+					"settings":
+					{
+						"buffer_size": 1720,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1158,
+								1158
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"devel": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": "load-save",
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/manage.js",
+					"settings":
+					{
+						"buffer_size": 873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								351,
+								351
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"devel": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": "load-save",
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 346.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"loader",
+				"src/config/loader.js"
+			],
+			[
+				"nconf.js",
+				"node_modules/nconf/lib/nconf.js"
+			],
+			[
+				"nconf/",
+				"node_modules/nconf/lib/nconf.js"
+			],
+			[
+				"runto",
+				"django_common/contrib/st/management/commands/runtornado.py"
+			],
+			[
+				"pinyin_converter",
+				"web/static/src/js/pinyin_converter.js"
+			],
+			[
+				"settings.py",
+				"website/website/settings.py"
+			],
+			[
+				"authbridge",
+				"shims/common-secure/src/main/java/org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge20S.java"
+			],
+			[
+				"sqoopwritable",
+				"execution/mapreduce/src/main/java/org/apache/sqoop/job/io/SqoopWritable.java"
+			],
+			[
+				"sqoopreducer",
+				"execution/mapreduce/src/main/java/org/apache/sqoop/job/mr/SqoopReducer.java"
+			],
+			[
+				"sqoopmapper",
+				"execution/mapreduce/src/main/java/org/apache/sqoop/job/mr/SqoopMapper.java"
+			],
+			[
+				"options.js",
+				"extensions/chrome/generators/options.js"
+			],
+			[
+				"facade",
+				"extensions/chrome/backends/facade.js"
+			],
+			[
+				"back",
+				"extensions/chrome/generators/background.js"
+			],
+			[
+				"passw",
+				"kpdb-js/lib/credentials/password.js"
+			],
+			[
+				"background",
+				"extensions/chrome/generators/background.js"
+			],
+			[
+				"options.html",
+				"extensions/chrome/html/options.html"
+			],
+			[
+				"option.",
+				"extensions/chrome/generators/options.js"
+			],
+			[
+				"gather.",
+				"web/tones/templates/tones/gather.html"
+			],
+			[
+				"tones.js",
+				"web/tones/static/js/tones.js"
+			],
+			[
+				"settings.",
+				"web/settings.py"
+			],
+			[
+				"inventory.js",
+				"projects/web/inventory/static/js/inventory.js"
+			],
+			[
+				"inventory.html",
+				"projects/web/inventory/templates/inventory/index.html"
+			],
+			[
+				"ko.r",
+				"web/static/src/js/ko.routie.js"
+			],
+			[
+				"toneaggrega/mod",
+				"web/toneaggregator/models.py"
+			],
+			[
+				"ko",
+				"web/static/src/js/ko.routie.js"
+			],
+			[
+				"ko.ro",
+				"web/static/src/js/ko.routie.js"
+			],
+			[
+				"ko.sele",
+				"web/static/src/js/ko.select2.js"
+			],
+			[
+				"invoices/model",
+				"projects/common/dataleap_common/invoices/models.py"
+			],
+			[
+				"base.html",
+				"projects/web/templates/base.html"
+			],
+			[
+				"serializer",
+				"projects/common/dataleap_common/inventory/serializers.py"
+			],
+			[
+				"seri",
+				"projects/common/dataleap_common/inventory/serializers.py"
+			],
+			[
+				"serializers",
+				"projects/common/dataleap_common/inventory/serializers.py"
+			],
+			[
+				"invoice/api",
+				"projects/web/invoices/api.py"
+			],
+			[
+				"loadda",
+				"thirdparty/Django-1.5/django/core/management/commands/loaddata.py"
+			],
+			[
+				"inve/mo",
+				"projects/common/dataleap_common/inventory/models.py"
+			],
+			[
+				"companies/model",
+				"projects/common/dataleap_common/companies/models.py"
+			],
+			[
+				"fresh",
+				"projects/fresh_start.sh"
+			],
+			[
+				"companies/fixt",
+				"projects/common/dataleap_common/companies/fixtures/clients.json"
+			],
+			[
+				"companies/fix",
+				"projects/common/dataleap_common/companies/fixtures/clients.json"
+			],
+			[
+				"inventory/models.py",
+				"projects/common/dataleap_common/inventory/models.py"
+			],
+			[
+				"inventory/seri",
+				"projects/common/dataleap_common/inventory/serializers.py"
+			],
+			[
+				"inventory/model",
+				"projects/common/dataleap_common/inventory/models.py"
+			],
+			[
+				"inventory/api",
+				"projects/web/inventory/api.py"
+			],
+			[
+				"inventory/seria",
+				"projects/common/dataleap_common/inventory/serializers.py"
+			],
+			[
+				"invoices/urls",
+				"projects/web/invoices/urls.py"
+			],
+			[
+				"invoices/api",
+				"projects/web/invoices/api.py"
+			],
+			[
+				"dataleap.js",
+				"projects/web/static/src/common/js/dataleap.js"
+			],
+			[
+				"invoice/model",
+				"projects/common/dataleap_common/invoices/models.py"
+			],
+			[
+				"0004_auto__add_companyitem__add_unique_companyitem_company_item.py",
+				"projects/common/dataleap_common/migrations/0004_auto__add_companyitem__add_unique_companyitem_company_item.py"
+			],
+			[
+				"ngn",
+				"projects/fabfile_nginx.py"
+			],
+			[
+				"runtornado",
+				"library/django-common/django_common/contrib/st/management/commands/runtornado.py"
+			],
+			[
+				"runtorna",
+				"projects/qbwc-service/qbwc/management/commands/runtornado.py"
+			],
+			[
+				"fabfile",
+				"projects/fabfile.py"
+			],
+			[
+				"models.py",
+				"projects/web/flashcards/models.py"
+			],
+			[
+				"ko.rout",
+				"projects/web/static/src/js/ko.routie.js"
+			],
+			[
+				"web/invoices/api",
+				"projects/web/invoices/api.py"
+			],
+			[
+				"invoice/mod",
+				"projects/common/dataleap_common/invoices/models.py"
+			],
+			[
+				"signals.py",
+				"projects/common/dataleap_common/companies/signals.py"
+			],
+			[
+				"importlib",
+				"projects/common/dataleap_common/invoices/importlib/__init__.py"
+			],
+			[
+				"api",
+				"projects/web/invoices/api.py"
+			],
+			[
+				"dataaleap.js",
+				"thirdparty/Django-1.5/django/contrib/flatpages/fixtures/sample_flatpages.json"
+			],
+			[
+				"invoices.js",
+				"projects/web/invoices/static/js/invoices.js"
+			],
+			[
+				"client_examples",
+				"projects/common/dataleap_common/companies/management/commands/client_examples.py"
+			],
+			[
+				"permissions.py",
+				"projects/common/dataleap_common/companies/permissions.py"
+			],
+			[
+				"companies/permiss",
+				"projects/common/dataleap_common/companies/permissions.py"
+			],
+			[
+				"companies/sign",
+				"projects/common/dataleap_common/companies/signals.py"
+			],
+			[
+				"0013_",
+				"projects/common/dataleap_common/migrations/0013_auto__del_vendoritem__del_clientvendormembership__del_unique_clientven.py"
+			],
+			[
+				"0013_auto__del_vendoritem__del_client__del_vendor__del_clientvendormembersh.py",
+				"projects/common/dataleap_common/migrations/0013_auto__del_vendoritem__del_client__del_vendor__del_clientvendormembersh.py"
+			],
+			[
+				"companies/models.py",
+				"projects/common/dataleap_common/companies/models.py"
+			],
+			[
+				"accounts/model",
+				"projects/common/dataleap_common/accounts/models.py"
+			],
+			[
+				"web/middle",
+				"projects/web/middleware.py"
+			],
+			[
+				"dataleap_common/models.py",
+				"projects/common/dataleap_common/invoices/models.py"
+			],
+			[
+				"dataleap_common/models",
+				"projects/common/dataleap_common/companies/models.py"
+			],
+			[
+				"dataleap_common/inventory/model",
+				"projects/common/dataleap_common/inventory/models.py"
+			],
+			[
+				"companies/vendor.html",
+				"projects/web/companies/templates/companies/vendor.html"
+			],
+			[
+				"vendor.html",
+				"projects/web/companies/templates/companies/vendor.html"
+			],
+			[
+				"invoices/url",
+				"projects/web/invoices/urls.py"
+			],
+			[
+				"companies.js",
+				"projects/web/companies/static/js/companies.js"
+			],
+			[
+				"companies/html",
+				"projects/web/companies/templates/companies/client.html"
+			],
+			[
+				"ko.routie",
+				"projects/common/dataleap_common/static/js/ko.routie.js"
+			],
+			[
+				"invoices/html",
+				"projects/web/invoices/templates/invoices/client_invoices_manager.html"
+			],
+			[
+				"invoices/client",
+				"projects/web/invoices/templates/invoices/client_invoices_manager.html"
+			],
+			[
+				"ko.filt",
+				"projects/common/dataleap_common/static/js/ko.filter.js"
+			],
+			[
+				"ko.table",
+				"projects/common/dataleap_common/static/js/ko.tablesorter.js"
+			],
+			[
+				"inventory/models",
+				"projects/common/dataleap_common/inventory/models.py"
+			],
+			[
+				"ko.routie.js",
+				"projects/common/dataleap_common/static/js/ko.routie.js"
+			],
+			[
+				"invoies.js",
+				"projects/web/invoices/static/js/invoices.js"
+			],
+			[
+				"companies/js",
+				"projects/web/companies/static/js/companies.js"
+			],
+			[
+				"invoice/template",
+				"projects/web/invoices/templates/invoices/client_invoices_manager.html"
+			],
+			[
+				"index.html",
+				"projects/web/website/templates/website/index.html"
+			],
+			[
+				"accounts/api",
+				"projects/web/accounts/api.py"
+			],
+			[
+				"dataleap.s",
+				"projects/web/static/src/common/js/dataleap.js"
+			],
+			[
+				"invoices.ko",
+				"projects/web/invoices/static/js/invoices.ko.js"
+			],
+			[
+				"invoices/seri",
+				"projects/common/dataleap_common/invoices/serializers.py"
+			],
+			[
+				"invoices/models",
+				"projects/common/dataleap_common/invoices/models.py"
+			],
+			[
+				"dataleap/settings",
+				"projects/common/dataleap_common/settings.py"
+			],
+			[
+				"setting",
+				"projects/web/settings.py"
+			],
+			[
+				"dataleap_common/setting",
+				"projects/common/dataleap_common/settings.py"
+			],
+			[
+				"invoice/models",
+				"projects/common/dataleap_common/invoices/models.py"
+			],
+			[
+				"invoices/ser",
+				"projects/common/dataleap_common/invoices/serializers.py"
+			],
+			[
+				"serializers.py",
+				"projects/common/dataleap_common/invoices/serializers.py"
+			],
+			[
+				"serial",
+				"projects/common/dataleap_common/invoices/serializers.py"
+			],
+			[
+				"index.js",
+				"projects/web/website/static/js/index.js"
+			],
+			[
+				"kn",
+				"projects/common/dataleap_common/static/js/knockout.min.js"
+			],
+			[
+				"ko.pass",
+				"projects/common/dataleap_common/static/js/ko.password.js"
+			],
+			[
+				"ko.passw",
+				"projects/common/dataleap_common/static/js/ko.password.js"
+			],
+			[
+				"ko.valid",
+				"projects/common/dataleap_common/static/js/ko.validate.js"
+			],
+			[
+				"generics.py",
+				"library/django-common/django_common/contrib/rest_framework/generics.py"
+			],
+			[
+				"rest_framework/view",
+				"thirdparty/django-rest-framework/rest_framework/views.py"
+			],
+			[
+				"rest_framegeneric",
+				"thirdparty/django-rest-framework/rest_framework/generics.py"
+			],
+			[
+				"rest_framework/generic",
+				"thirdparty/django-rest-framework/rest_framework/generics.py"
+			],
+			[
+				"permissions",
+				"projects/common/dataleap_common/companies/permissions.py"
+			],
+			[
+				"permission",
+				"projects/common/dataleap_common/companies/permissions.py"
+			],
+			[
+				"companies/api",
+				"projects/web/companies/api.py"
+			],
+			[
+				"invoices-vendor",
+				"projects/web/invoices/static/js/invoices-vendors.ko.js"
+			],
+			[
+				"base.ht",
+				"projects/web/templates/base.html"
+			],
+			[
+				"validate.js",
+				"projects/common/dataleap_common/static/js/ko.validate.js"
+			],
+			[
+				"js/index",
+				"projects/web/website/static/js/index.js"
+			],
+			[
+				"pseria",
+				"projects/common/dataleap_common/companies/serializers.py"
+			],
+			[
+				"rest_framework/gener",
+				"thirdparty/django-rest-framework/rest_framework/generics.py"
+			],
+			[
+				"seriali",
+				"projects/common/dataleap_common/companies/serializers.py"
+			],
+			[
+				"seria",
+				"projects/common/dataleap_common/companies/serializers.py"
+			],
+			[
+				"phonenumb",
+				"projects/common/dataleap_common/static/js/ko.phonenumber.js"
+			],
+			[
+				"restviews.py",
+				"thirdparty/django-rest-framework/rest_framework/views.py"
+			],
+			[
+				"rest_framework/",
+				"thirdparty/django-rest-framework/rest_framework/views.py"
+			],
+			[
+				"invoice/ser",
+				"projects/common/dataleap_common/invoices/serializers.py"
+			],
+			[
+				"companies/serial",
+				"projects/common/dataleap_common/companies/serializers.py"
+			],
+			[
+				"companies/url",
+				"projects/web/companies/urls.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 295.0,
+	"status_bar_visible": true
+}
