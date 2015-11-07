@@ -15,12 +15,9 @@ module.exports = React.createClass({
     };
   },
   componentDidMount: function() {
-    Actions.isDatabaseReady();
+    Actions.ready();
   },
   onUpdate: function(data) {
-    if (!data.database_ready){
-      this.history.pushState(null, "/register");
-    }
     if (data.ready) {
       this.history.pushState(null, "/");
     }
@@ -29,8 +26,7 @@ module.exports = React.createClass({
     this.setState({"password": e.target.value});
   },
   login: function() {
-    Actions.setPassword(this.state.password);
-    Actions.load();
+    Actions.login(this.state.password);
   },
   anew: function() {
     this.history.pushState(null, "/register");

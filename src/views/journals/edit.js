@@ -55,12 +55,12 @@ module.exports = React.createClass({
   },
   onSubmitJournal: function(e) {
     if (this.isNew()) {
-      actions.addEntry(
+      actions.save([
         React.addons.update(
           this.getEntry(), {
             "id": {$set: Uuid()}
-          }));
-      actions.save();
+          })
+        ]);
     } else {
       // TODO: Update case
     }

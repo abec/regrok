@@ -1,26 +1,32 @@
 
-var Markdown = require('react-markdown'),
+var _ = require('underscore'),
+    History = require('react-router').History,
+    Markdown = require('react-markdown'),
     Panel = require('react-bootstrap').Panel,
-    React = require('react/addons'),
-    Reflux = require('reflux');
+    React = require('react/addons');
 
 var actions = require('../../actions'),
     store = require('../../stores');
 
 module.exports = React.createClass({
-  mixins: [Reflux.listenTo(store, "onGetEntry")],
+  mixins: [History],
   getInitialState: function() {
     return {
       "entry": null
     };
   },
   componentDidMount: function() {
-    actions.getEntry(this.props.params.id);
-  },
-  onGetEntry: function(data) {
-    this.setState({
-      "entry": data.entry
+    var search_id = this.props.params.id;
+    var entry = _.filter(this.props.entries, function(entry) {
+      return entry.id == search_id;
     });
+    if (entry.length == 0) {
+      this.history.pushState(null, "/entries");
+    } else {
+      this.setState({
+        "entry": entry[0]
+      });
+    }
   },
   render: function() {
     var entry = this.state.entry;

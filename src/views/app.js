@@ -1,45 +1,98 @@
 
-var Bootstrap = require('react-bootstrap'),
+var _ = require('underscore'),
+    Bootstrap = require('react-bootstrap'),
     History = require('react-router').History,
     Link = require('react-router').Link,
     React = require('react'),
-    Reflux = require('reflux');
+    Reflux = require('reflux'),
+    ClassNames = require('classnames');
 
-var actions = require('../actions'),
-    store = require('../stores');
+var Actions = require('../actions'),
+    Store = require('../stores');
 
 module.exports = React.createClass({
-  mixins: [History, Reflux.listenTo(store, "onUpdate")],
+  mixins: [History, Reflux.listenTo(Store, "onUpdate")],
   getInitialState: function() {
     return {
-      entries: []
+      entries: [],
+      ready: false
     };
   },
   componentDidMount: function() {
-    actions.load();
+    Actions.load();
+  },
+  componentDidUpdate: function() {
+    if (!this.state.ready) {
+      this.redirect();
+    }
+
+    return true;
   },
   onUpdate: function(data) {
-    if (!data.ready) return this.history.pushState(null, "/login");
-    this.setState({
-      entries: data.entries
-    });
+    if (data.ready) {
+      this.setState({
+        entries: data.entries,
+        ready: data.ready
+      });
+    } else {
+      this.redirect();
+      this.setState({
+        ready: data.ready
+      });
+    }
   },
   render: function() {
     return (
       <div>
-        <Bootstrap.Navbar>
-          <Bootstrap.Nav>
-            <li>
-              <Link to={"/entries"} {...this.props}>
-                <Bootstrap.Glyphicon glyph="list" />
-              </Link>
-            </li>
-          </Bootstrap.Nav>
-        </Bootstrap.Navbar>
+        {this.renderNavigation()}
         <div className="container">
           {React.cloneElement(this.props.children, {entries: this.state.entries})}
         </div>
       </div>
     );
+  },
+
+  renderNavigation: function() {
+    var logout = (
+          <li>
+            <a onClick={Actions.logout}>
+              <Bootstrap.Glyphicon glyph="log-out" />
+            </a>
+          </li>
+        ),
+        list = (
+          <li className={ClassNames({
+            "hide": this.props.params.pathname == "/entries"
+          })}>
+            <Link to={"/entries"} {...this.props}>
+              <Bootstrap.Glyphicon glyph="list" />
+            </Link>
+          </li>
+        ),
+        create = (
+          <li className={ClassNames({
+            "hide": this.props.params.pathname == "/"
+          })}>
+            <Link to={"/"} {...this.props}>
+              <Bootstrap.Glyphicon glyph="pencil" />
+            </Link>
+          </li>
+        );
+    return (
+      <Bootstrap.Navbar>
+        <Bootstrap.Nav right>
+          {(this.state.ready) ? logout : null}
+        </Bootstrap.Nav>
+        <Bootstrap.Nav>
+          {(this.state.ready && this.props.params.pathname != "/entries") ? list : null}
+          {(this.state.ready && this.props.params.pathname != "/") ? create : null}
+        </Bootstrap.Nav>
+      </Bootstrap.Navbar>
+    );
+  },
+  redirect: function() {
+    if (_.indexOf(["/login", "/register"], this.props.location.pathname) == -1) {
+      this.history.pushState(null, "/login");
+    }
   }
 });

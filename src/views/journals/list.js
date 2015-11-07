@@ -1,5 +1,6 @@
 
-var History = require('react-router').History,
+var _ = require('underscore'),
+    History = require('react-router').History,
     Markdown = require('react-markdown'),
     Panel = require('react-bootstrap').Panel,
     Pick = require('object.pick'),
@@ -24,8 +25,13 @@ module.exports = React.createClass({
           self.history.pushState(null, "/");
         }}
         onEntryDelete={function(entry) {
-          actions.removeEntry(entry.id);
-          actions.save();
+          for (var i = 0; i < self.props.entries.length; ++i) {
+            if (self.props.entries[i].id == entry.id) {
+              actions.set(_.without(self.props.entries, self.props.entries[i]));
+              actions.save();
+              break;
+            }
+          }
         }}
         onEntryView={function(entry) {
           self.history.pushState(null, "/entries/" + entry.id);

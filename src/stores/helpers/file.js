@@ -23,29 +23,25 @@ var FileUtility = function(location, middleware) {
 
 _.extend(FileUtility.prototype, {
   save: function(contents) {
-    var chain = applyMiddleware(Promise.resolve([this.location, contents]), this.middleware.save);
+    var self = this,
+        initial = Promise.resolve([self.location, contents]),
+        chain = applyMiddleware(initial, self.middleware.save);
     return chain.spread(function(location, contents) {
-      return new Promise(function(resolve, reject) {
-        fs.writeFile(location, contents, function(err) {
-          if (err) return reject(err);
-          fs.truncateSync(location, contents.length, function(err) {
-            if (err) return reject(err);
-            return resolve([location, contents]);
-          });
-        });
+      return Promise.join(
+        Promise.promisify(fs.writeFile)(location, contents),
+        Promise.promisify(fs.truncate)(location, contents.length)
+      ).then(function() {
+        return [location, contents];
       });
     });
   },
   load: function() {
     var location = this.location,
-        initial = new Promise(function(resolve, reject) {
-          fs.readFile(location, function(err, contents) {
-            if (err) return reject(err);
-            return resolve([location, contents]);
-          });
+        chain = Promise.promisify(fs.readFile)(location).then(function(contents) {
+          return Promise.resolve([location, contents]);
         });
 
-    return applyMiddleware(initial, this.middleware.load);
+    return applyMiddleware(chain, this.middleware.load);
   }
 });
 

@@ -1,6 +1,7 @@
 var fs = require("fs");
 
 var _ = require('underscore'),
+    Promise = require('bluebird'),
     Reflux = require('reflux');
 
 var Actions = require('../actions'),
@@ -9,86 +10,114 @@ var Actions = require('../actions'),
     FileHelper = require('./helpers/file.js');
 
 var FileStore = Reflux.createStore({
+  listenables: Actions,
   init: function() {
+    console.debug("Loading FileStore with the path (" + Config.get("repository:file:path") + ").");
+
     this.location = Config.get("repository:file:path");
     this.security_enabled = Config.get("repository:security:enabled");
-    this.password = null;
-    this.entries = [];
-    this.ready = false;
-    this.database_ready = false;
-    this.has_password = false;
+
     this.helper = new FileHelper(this.location, this.middleware());
 
-    this.listenToMany(Actions);
+    this.ready = false;
+    this.password = null;
+    this.entries = null;
   },
-  onSetPassword: function(password) {
-    this.password = password;
-    this.has_password = true;
-    this.status();
-  },
-  onIsDatabaseReady: function() {
-    var self = this;
-    fs.stat(self.location, function(err) {
-      if (err) self.database_ready = false;
-      else self.database_ready = true;
-
-      self.status();
-    });
+  onReady: function() {
+    this.genericTrigger();
   },
   onLoad: function() {
-    var self = this;
-    self.helper.load().spread(function(location, contents) {
-      if (contents) {
-        self.entries = JSON.parse(contents);
-        self.database_ready = true;
-        self.ready = true;
-      }
-      self.status();
-    }).catch(function(err) {
-      console.log(err);
-      self.status();
-    });
+    this.load()
+      .catch(function(err) {
+        console.log(err);
+      })
+      .finally(this.genericTrigger.bind(this, null));
   },
-  onSave: function() {
-    var self = this;
-    self.helper.save(JSON.stringify(self.entries)).spread(function(location, contents) {
-      self.status();
-    });
+  onSave: function(entries) {
+    this.entries = _.union(this.entries, entries || []);
+    this.save()
+      .catch(function(err) {
+        console.log(err);
+      })
+      .finally(this.genericTrigger.bind(this, null));
   },
-  onAddEntry: function(entry) {
-    this.entries.push(entry);
-    this.status();
+  onSet: function(entries) {
+    this.entries = entries;
+    this.genericTrigger();
   },
-  onRemoveEntry: function(entryId) {
-    for (var i = 0; i < this.entries.length; ++i) {
-      if (this.entries[i].id == entryId) {
-        this.entries.splice(i, 1);
-        break;
-      }
-    }
+  onRegister: function(password) {
+    this.reset();
+    this.password = password;
+    this.save()
+      .catch(function(err) {
+        console.log(err);
+      })
+      .finally(this.genericTrigger.bind(this, null));
+  },
+  onLogin: function(password) {
+    this.password = password;
+    this.load()
+      .catch(function(err) {
+        console.log(err);
+      })
+      .finally(this.genericTrigger.bind(this, null));
+  },
+  onLogout: function() {
+    this.password = null;
+    this.entries = null;
+    this.ready = false;
+    this.genericTrigger();
+  },
 
-    this.status();
-  },
+  // onAddEntry: function(entry) {
+  //   this.entries.push(entry);
+  //   this.genericTrigger();
+  // },
+  // onRemoveEntry: function(entryId) {
+  //   for (var i = 0; i < this.entries.length; ++i) {
+  //     if (this.entries[i].id == entryId) {
+  //       this.entries.splice(i, 1);
+  //       break;
+  //     }
+  //   }
+  //
+  //   this.genericTrigger();
+  // },
   // Refactor
-  onGetEntry: function(entryId) {
-    for (var i = 0; i < this.entries.length; ++i) {
-      if (this.entries[i].id == entryId) {
-        this.status({entry: this.entries[i]});
-        break;
-      }
-    }
+  // onGetEntry: function(entryId) {
+  //   for (var i = 0; i < this.entries.length; ++i) {
+  //     if (this.entries[i].id == entryId) {
+  //       this.genericTrigger({entry: this.entries[i]});
+  //       break;
+  //     }
+  //   }
+  // },
+  save: function() {
+    return this.helper.save(JSON.stringify(this.entries || []))
+      .catch(function(err) {
+        console.log(err);
+      });
   },
-  onReset: function() {
+  load: function() {
+    var self = this;
+    return self.helper.load()
+      .spread(function(location, contents) {
+        if (contents) {
+          self.entries = JSON.parse(contents);
+          return self.entries;
+        } else {
+          return Promise.reject("Contents came back null.");
+        }
+      });
+  },
+  reset: function() {
     try {
       fs.renameSync(this.location, this.location + "." + new Date().getTime().toString());
     } catch (e) {
       // Doesn't exit... just like we want it.
     }
-    this.entries = [];
-    this.ready = false;
-    this.status();
+    this.entries = null;
   },
-
   middleware: function() {
     var self = this;
     if (this.security_enabled) {
@@ -112,45 +141,32 @@ var FileStore = Reflux.createStore({
       return null;
     }
   },
-  status: function(extra) {
-    this.trigger(_.extend({
-      ready: this.ready,
-      database_ready: this.database_ready,
-      has_password: this.has_password,
-      entries: this.entries
-    }, extra));
+  isReady: function() {
+    var self = this;
+
+    // 1. Check file exists
+    // 2. Check for password or security is off.
+    // 3. Check for entries.
+    return Promise.promisify(require("fs").stat)(self.location)
+      .catch(function() {
+        return false;
+      })
+      .then(function() {
+        return !!self.password || !self.security_enabled;
+      })
+      .then(function() {
+        return self.entries !== null;
+      });
+  },
+  genericTrigger: function(extra) {
+    var self = this;
+    self.isReady().then(function(ready) {
+      self.trigger(_.extend({
+        ready: ready,
+        entries: self.entries
+      }, extra || {}));
+    });
   }
-
-
-  // save: function() {
-  //   var self = this;
-  //   return Security.encrypt(JSON.stringify(self.entries), self.password).then(function(encrypted_contents) {
-  //     fs.writeFileSync(Config.get("repository:encrypted_file:path"), encrypted_contents);
-  //     fs.truncateSync(Config.get("repository:encrypted_file:path"), encrypted_contents.length);
-  //     return self.entries;
-  //   });
-  // },
-  // load: function() {
-  //   var self = this;
-  //   return new Promise(function(resolve, reject) {
-  //     try {
-  //       // Stat throws an exception if the path doesn't exist.
-  //       fs.statSync(Config.get("repository:encrypted_file:path"));
-  //     } catch (e) {
-  //       return self.save().then(resolve, reject);
-  //     }
-
-  //     var encrypted_contents = fs.readFileSync(Config.get("repository:encrypted_file:path"));
-  //     return Security.decrypt(encrypted_contents, self.password).then(function(decrypted_contents) {
-  //       if (decrypted_contents) {
-  //         self.entries = JSON.parse(decrypted_contents.toString());
-  //         return resolve(self.entries);
-  //       } else {
-  //         return reject(null);
-  //       }
-  //     }, reject);
-  //   });
-  // }
 });
 
 module.exports = FileStore;

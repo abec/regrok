@@ -1,6 +1,11 @@
 
 var app = require('app');  // Module to control application life.
 var BrowserWindow = require('browser-window');  // Module to create native browser window.
+var ipc = require('ipc'); // Send app dir.
+
+ipc.on('appdir', function(event, arg) {
+  event.returnValue = __dirname;
+});
 
 // Report crashes to our server.
 require('crash-reporter').start();

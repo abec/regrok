@@ -10,10 +10,11 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     webpack: {
       options: webpackConfig,
-      "build-dev": {
+      dev: {
         devtool: "eval",
         debug: true
-      }
+      },
+      prod: {}
     },
     "webpack-dev-server": {
       options: {
@@ -62,6 +63,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['spawn:dev', 'webpack-dev-server:start']);
   grunt.registerTask('dev', ['spawn:dev', 'webpack-dev-server:start']);
-  grunt.registerTask('prod', ['webpack', 'spawn:dev']);
-  grunt.registerTask('build', ['webpack', 'electron:mac']);
+  grunt.registerTask('prod', ['webpack:dev', 'spawn:dev']);
+  grunt.registerTask('build', ['webpack:prod', 'electron:mac']);
 };
