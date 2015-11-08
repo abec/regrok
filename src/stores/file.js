@@ -46,9 +46,13 @@ var FileStore = Reflux.createStore({
     this.genericTrigger();
   },
   onRegister: function(password) {
+    var self = this;
     this.reset();
     this.password = password;
     this.save()
+      .then(function(entries) {
+        self.entries = entries;
+      })
       .catch(function(err) {
         console.log(err);
       })
@@ -69,31 +73,12 @@ var FileStore = Reflux.createStore({
     this.genericTrigger();
   },
 
-  // onAddEntry: function(entry) {
-  //   this.entries.push(entry);
-  //   this.genericTrigger();
-  // },
-  // onRemoveEntry: function(entryId) {
-  //   for (var i = 0; i < this.entries.length; ++i) {
-  //     if (this.entries[i].id == entryId) {
-  //       this.entries.splice(i, 1);
-  //       break;
-  //     }
-  //   }
-  //
-  //   this.genericTrigger();
-  // },
-  // Refactor
-  // onGetEntry: function(entryId) {
-  //   for (var i = 0; i < this.entries.length; ++i) {
-  //     if (this.entries[i].id == entryId) {
-  //       this.genericTrigger({entry: this.entries[i]});
-  //       break;
-  //     }
-  //   }
-  // },
   save: function() {
-    return this.helper.save(JSON.stringify(this.entries || []))
+    var entries = this.entries || [];
+    return this.helper.save(JSON.stringify(entries))
+      .then(function() {
+        return entries
+      })
       .catch(function(err) {
         console.log(err);
       });

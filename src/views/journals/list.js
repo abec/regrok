@@ -21,9 +21,6 @@ module.exports = React.createClass({
       <Griddy
         data={this.props.entries}
         order={["name", "ctime", "mtime"]}
-        onEntryAdd={function(entry) {
-          self.history.pushState(null, "/");
-        }}
         onEntryDelete={function(entry) {
           for (var i = 0; i < self.props.entries.length; ++i) {
             if (self.props.entries[i].id == entry.id) {
@@ -35,6 +32,11 @@ module.exports = React.createClass({
         }}
         onEntryView={function(entry) {
           self.history.pushState(null, "/entries/" + entry.id);
+        }}
+        buttons={{
+          add: false,
+          edit: false,
+          delete: true
         }}
         columnMetadata={
           {

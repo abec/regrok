@@ -11,7 +11,8 @@ module.exports = React.createClass({
   mixins: [History, Reflux.listenTo(Store, "onUpdate")],
   getInitialState: function() {
     return {
-      "password": null
+      "password": null,
+      "type": "login"
     };
   },
   componentDidMount: function() {
@@ -25,11 +26,22 @@ module.exports = React.createClass({
   onPasswordChange: function(e) {
     this.setState({"password": e.target.value});
   },
-  login: function() {
-    Actions.login(this.state.password);
+  toggleType: function(e, eventKey) {
+    this.setState({
+      type: eventKey
+    });
   },
-  anew: function() {
-    this.history.pushState(null, "/register");
+  loginOrRegister: function(e) {
+    if (e.type == "keyup") {
+      // Enter event
+      if (e.keyCode == 13) {
+        Actions[this.state.type](this.state.password);
+      }
+    } else {
+      Actions[this.state.type](this.state.password);
+    }
+    e.stopPropagation();
+    e.preventDefault();
   },
   render: function() {
     return (
@@ -40,11 +52,27 @@ module.exports = React.createClass({
             ref="password"
             type="password"
             placeholder="Enter name"
-            onChange={this.onPasswordChange} />
-          <Bootstrap.Button onClick={this.login}>Submit</Bootstrap.Button>
-          <Bootstrap.Button onClick={this.anew}>Start anew</Bootstrap.Button>
+            onChange={this.onPasswordChange}
+            onKeyUp={this.loginOrRegister}
+            buttonAfter={
+              <Bootstrap.SplitButton
+                  key="type"
+                  title={this.toProperCase(this.state.type)}
+                  onSelect={this.toggleType}
+                  onClick={this.loginOrRegister}
+                  style={{
+                    width: "103px"
+                  }}>
+                <Bootstrap.MenuItem eventKey="login">Login</Bootstrap.MenuItem>
+                <Bootstrap.MenuItem eventKey="register">Register</Bootstrap.MenuItem>
+              </Bootstrap.SplitButton>
+            } />
         </form>
       </div>
     );
+  },
+
+  toProperCase: function(text) {
+    return text.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
   }
 });

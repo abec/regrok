@@ -9,22 +9,21 @@ var Button = require('react-bootstrap').Button,
     Uuid = require('uuid4');
 
 var actions = require('../../actions'),
-    store = require('../../stores');
+    store = require('../../stores'),
+    BigText = require('../bigtext');
 
 module.exports = React.createClass({
   mixins: [History],
   propTypes: {
     "id": React.PropTypes.string,
-    "name": React.PropTypes.string.isRequired,
-    "data": React.PropTypes.string.isRequired,
+    "name": React.PropTypes.string,
+    "data": React.PropTypes.string,
     "ctime": React.PropTypes.number,
     "mtime": React.PropTypes.number,
     "isMarkdownEnabled": React.PropTypes.bool
   },
   getInitialState: function() {
     return {
-      "name": "",
-      "data": "",
       "isMarkdownEnabled": true
     };
   },
@@ -38,16 +37,6 @@ module.exports = React.createClass({
       "isMarkdownEnabled": true
     };
   },
-  onNameChangeHandler: function(e) {
-    this.setState({
-      "name": e.target.value
-    });
-  },
-  onDataChangeHandler: function(e) {
-    this.setState({
-      "data": e.target.value
-    });
-  },
   onIsMarkdownEnabledChangeHandler: function(e) {
     this.setState({
       "isMarkdownEnabled": this.refs.isMarkdownEnabled.getChecked()
@@ -58,7 +47,9 @@ module.exports = React.createClass({
       actions.save([
         React.addons.update(
           this.getEntry(), {
-            "id": {$set: Uuid()}
+            "id": {$set: Uuid()},
+            "name": {$set: this.refs.body.state.subject},
+            "data": {$set: this.refs.body.state.content},
           })
         ]);
     } else {
@@ -71,26 +62,11 @@ module.exports = React.createClass({
       "checked": this.state.isMarkdownEnabled
     };
     return (
-      <div className="container">
-        <form>
-          <Input
-            ref="name"
-            type="text"
-            defaultValue={this.props.name}
-            value={this.state.name}
-            placeholder="Enter name"
-            label="Name of your journal entry"
-            help="Name of your journal entry!"
-            onChange={this.onNameChangeHandler} />
-          <Input
-            ref="data"
-            type="textarea"
-            defaultValue={this.props.data}
-            value={this.state.data}
-            placeholder="Write some stuff..."
-            label="Write down your thoughts"
-            help="Write down your thoughts!"
-            onChange={this.onDataChangeHandler} />
+      <BigText>
+        <BigText.Body subjectPlaceholder="Give your sad story a subject"
+                      contentPlaceholder="Write your sad story"
+                      ref="body" />
+        <BigText.Footer>
           <Input
             {...isMarkdownEnabledProps}
             ref="isMarkdownEnabled"
@@ -100,8 +76,8 @@ module.exports = React.createClass({
             label="Markdown Enabled"
             onChange={this.onIsMarkdownEnabledChangeHandler} />
           <Button onClick={this.onSubmitJournal}>Submit</Button>
-        </form>
-      </div>
+        </BigText.Footer>
+      </BigText>
     );
   },
   isNew: function() {
@@ -110,8 +86,6 @@ module.exports = React.createClass({
   getEntry: function() {
     return React.addons.update(
       Pick(this.props, "id", "name", "data", "ctime", "mtime", "isMarkdownEnabled"), {
-        "name": {$set: this.state.name},
-        "data": {$set: this.state.data},
         "isMarkdownEnabled": {$set: this.state.isMarkdownEnabled}
       });
   }

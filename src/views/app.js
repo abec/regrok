@@ -91,7 +91,7 @@ module.exports = React.createClass({
     );
   },
   redirect: function() {
-    if (_.indexOf(["/login", "/register"], this.props.location.pathname) == -1) {
+    if (_.indexOf(["/login"], this.props.location.pathname) == -1) {
       this.history.pushState(null, "/login");
     }
   }

@@ -1,0 +1,49 @@
+div.bigtext {
+  outline: none;
+}
+
+div.bigtext-header,
+div.bigtext-footer,
+div.bigtext-body,
+label.bigtext-subject-placeholder,
+label.bigtext-content-placeholder {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  outline: none;
+}
+
+div.bigtext-body {
+  top: 52px;
+  bottom: 100px;
+}
+
+div.bigtext-body h3.bigtext-subject {
+  background: #EEEEEE;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.bigtext-footer {
+  height: 100px;
+  top: auto;
+  bottom: 0;
+  padding: 10px;
+}
+
+div.bigtext-header {
+  height: 52px;
+  top: 0;
+  bottom: auto;
+}
+
+label.bigtext-subject-placeholder,
+label.bigtext-content-placeholder {
+  top: auto;
+  bottom: auto;
+  color: gray;
+  font-family: verdana;
+  font-weight: normal;
+}
