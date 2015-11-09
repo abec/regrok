@@ -47,6 +47,7 @@ module.exports = function(grunt) {
         }
       }
     },
+    clean: [__dirname + "/dist", __dirname + "/public/build", __dirname + "/public/data.json", __dirname + "/public/data.*.json"],
     electron: {
       mac: {
         options: {
@@ -64,5 +65,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['spawn:dev', 'webpack-dev-server:start']);
   grunt.registerTask('dev', ['spawn:dev', 'webpack-dev-server:start']);
   grunt.registerTask('prod', ['webpack:dev', 'spawn:dev']);
-  grunt.registerTask('build', ['webpack:prod', 'electron:mac']);
+  grunt.registerTask('build', ['clean', 'webpack:prod', 'electron:mac']);
 };
