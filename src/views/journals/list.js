@@ -22,13 +22,15 @@ module.exports = React.createClass({
         data={this.props.entries}
         order={["name", "ctime", "mtime"]}
         onEntryDelete={function(entry) {
+          var entries = self.props.entries;
           for (var i = 0; i < self.props.entries.length; ++i) {
             if (self.props.entries[i].id == entry.id) {
-              actions.set(_.without(self.props.entries, self.props.entries[i]));
-              actions.save();
-              break;
+              entries = _.without(entries, self.props.entries[i]);
             }
           }
+          self.props.entries = entries;
+          actions.set(entries);
+          actions.save();
         }}
         onEntryView={function(entry) {
           self.history.pushState(null, "/entries/" + entry.id);
