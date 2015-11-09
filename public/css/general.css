@@ -2,3 +2,17 @@ html, body {
   height: 100%;
   margin: 0px;
 }
+
+.ReactCodeMirror {
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  height: auto;
+}
+
+.CodeMirror {
+  height: 100%;
+}

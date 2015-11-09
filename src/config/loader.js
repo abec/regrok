@@ -16,7 +16,7 @@ var DEFAULT_CONFIG = {
       "iv_size": 16,
       "cipher": "aes256",
       "rounds_factor": 10,
-      "enabled": true
+      "enabled": false
     },
     "use": "file"
   }
