@@ -1,7 +1,7 @@
 
 var History = require('react-router').History,
     Bootstrap = require('react-bootstrap'),
-    React = require('react/addons'),
+    React = require('react'),
     Reflux = require('reflux');
 
 var Actions = require('../../actions'),
@@ -56,6 +56,7 @@ module.exports = React.createClass({
             onKeyUp={this.loginOrRegister}
             buttonAfter={
               <Bootstrap.SplitButton
+                  id="type"
                   key="type"
                   title={this.toProperCase(this.state.type)}
                   onSelect={this.toggleType}

@@ -19,7 +19,7 @@ module.exports = React.createClass({
     };
   },
   componentDidMount: function() {
-    Actions.load();
+    Actions.ready();
   },
   componentDidUpdate: function() {
     if (!this.state.ready) {

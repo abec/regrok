@@ -3,7 +3,7 @@ var _ = require('underscore'),
     History = require('react-router').History,
     Markdown = require('react-markdown'),
     Panel = require('react-bootstrap').Panel,
-    React = require('react/addons');
+    React = require('react');
 
 var actions = require('../../actions'),
     store = require('../../stores');

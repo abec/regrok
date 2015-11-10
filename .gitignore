@@ -30,6 +30,7 @@ node_modules
 public/built
 public/data.json
 public/data.enc.json
+public/data.leveldb
 
 # Distribution
 dist

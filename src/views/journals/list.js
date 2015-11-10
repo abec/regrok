@@ -4,9 +4,8 @@ var _ = require('underscore'),
     Markdown = require('react-markdown'),
     Panel = require('react-bootstrap').Panel,
     Pick = require('object.pick'),
-    React = require('react/addons'),
-    Router = require('react-router').Router,
-    Uuid = require('uuid4');
+    React = require('react'),
+    Router = require('react-router').Router;
 
 var actions = require('../../actions'),
     formats = require('./formats.js'),
@@ -22,14 +21,11 @@ module.exports = React.createClass({
         data={this.props.entries}
         order={["name", "ctime", "mtime"]}
         onEntryDelete={function(entry) {
-          var entries = self.props.entries;
-          for (var i = 0; i < self.props.entries.length; ++i) {
+          for (var i = self.props.entries.length - 1; i >= 0; --i) {
             if (self.props.entries[i].id == entry.id) {
-              entries = _.without(entries, self.props.entries[i]);
+              actions.remove(self.props.entries[i]);
             }
           }
-          self.props.entries = entries;
-          actions.set(entries);
           actions.save();
         }}
         onEntryView={function(entry) {

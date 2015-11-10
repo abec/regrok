@@ -1,12 +1,13 @@
 
 var IndexRoute = require('react-router').IndexRoute,
     React = require('react'),
+    ReactDOM = require('react-dom'),
     Router = require('react-router').Router,
     Route = require('react-router').Route,
     $ = require('jquery');
 
 $(function() {
-  React.render((
+  ReactDOM.render((
     <Router>
       <Route path="/" component={require('./views/app.js')}>
         <Route path="login" component={require('./views/secure/login.js')} />
@@ -16,5 +17,5 @@ $(function() {
         <Route path="entries/:id" component={require('./views/journals/entry.js')} />
       </Route>
     </Router>
-  ), document.body);
+  ), document.getElementById("app"));
 });

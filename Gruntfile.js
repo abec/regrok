@@ -47,7 +47,16 @@ module.exports = function(grunt) {
         }
       }
     },
-    clean: [__dirname + "/dist", __dirname + "/public/build", __dirname + "/public/data.json", __dirname + "/public/data.*.json"],
+    clean: [
+      __dirname + "/dist",
+      __dirname + "/public/built",
+      __dirname + "/public/data.json",
+      __dirname + "/public/data.*.json",
+      __dirname + "/public/data.json.*",
+      __dirname + "/public/data.leveldb",
+      __dirname + "/public/data.*.leveldb",
+      __dirname + "/public/data.leveldb.*",
+    ],
     electron: {
       mac: {
         options: {

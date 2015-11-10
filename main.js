@@ -28,7 +28,7 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   // Create the browser window.
   // mainWindow = new BrowserWindow({width: 800, height: 600});
-  mainWindow = new BrowserWindow({"min-width": 1024, "min-height": 768, resizable: true});
+  mainWindow = new BrowserWindow({"min-width": 1024, "min-height": 768, "width": 1024, "height": 768, resizable: true});
 
   // and load the index.html of the app.
   if (process.env.DEV) mainWindow.loadUrl('file://' + __dirname + '/public/dev.html');

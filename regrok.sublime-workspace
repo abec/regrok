@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"contentOnKey",
+				"contentOnKeyDownHandler"
+			],
+			[
+				"DEFAU",
+				"DEFAULT_ROOT_PATH"
+			],
+			[
+				"secu",
+				"security_enabled"
+			],
+			[
 				"dec",
 				"decrypted_contents"
 			],
@@ -498,61 +514,11 @@
 			[
 				"details",
 				"invoice-details-selection"
-			],
-			[
-				"text-",
-				"text-align"
-			],
-			[
-				"inline",
-				"inline-block"
-			],
-			[
-				"static",
-				"static_files_dir"
-			],
-			[
-				"acti",
-				"activation_key"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "src/views/app.js",
-			"settings":
-			{
-				"buffer_size": 404,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 31524 files for \"/entries\"\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/node_modules/babel-core/browser.js:\n 28932:       \"entries\": \"array/entries\",\n 28969:       \"entries\": \"object/entries\",\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/node_modules/babel-plugin-runtime/lib/definitions.json:\n   15:       \"entries\": \"array/entries\",\n   52:       \"entries\": \"object/entries\",\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/node_modules/babel-runtime/core-js/array/entries.js:\n    1: module.exports = { \"default\": require(\"core-js/library/fn/array/entries\"), __esModule: true };\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/node_modules/babel-runtime/core-js/object/entries.js:\n    1: module.exports = { \"default\": require(\"core-js/library/fn/object/entries\"), __esModule: true };\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/public/built/bundle.js:\n 3503: 	eval(\"/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */\\\"use strict\\\";\\n\\nif (true) {\\n  (function () {\\n    var ReactHotAPI = __webpack_require__(5),\\n        RootInstanceProvider = __webpack_require__(13),\\n        ReactMount = __webpack_require__(15),\\n        React = __webpack_require__(68);module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {\\n      return RootInstanceProvider.getRootInstances(ReactMount);\\n    }, React);\\n  })();\\n}try {\\n  (function () {\\n\\n    var History = __webpack_require__(170).History,\\n        Markdown = __webpack_require__(497),\\n        Panel = __webpack_require__(218).Panel,\\n        Pick = __webpack_require__(511),\\n        React = __webpack_require__(512),\\n        Reflux = __webpack_require__(446),\\n        Router = __webpack_require__(170).Router,\\n        Uuid = __webpack_require__(530);\\n\\n    var actions = __webpack_require__(465),\\n        store = __webpack_require__(469),\\n        formats = __webpack_require__(531),\\n        Griddy = __webpack_require__(619);\\n\\n    module.exports = React.createClass({\\n      displayName: \\\"exports\\\",\\n\\n      mixins: [History, Reflux.listenTo(store, \\\"onLoad\\\")],\\n      getInitialState: function getInitialState() {\\n        return {\\n          \\\"entries\\\": []\\n        };\\n      },\\n      componentDidMount: function componentDidMount() {\\n        actions.load();\\n      },\\n      onLoad: function onLoad(entries) {\\n        this.setState({\\n          \\\"entries\\\": entries\\n        });\\n      },\\n      render: function render() {\\n        var self = this;\\n\\n        return React.createElement(Griddy, {\\n          data: this.state.entries,\\n          order: [\\\"name\\\", \\\"ctime\\\", \\\"mtime\\\"],\\n          onEntryAdd: function (entry) {\\n            self.history.pushState(null, \\\"/entries\\\");\\n          },\\n          onEntryDelete: function (entry) {\\n            actions.removeEntry(entry.id);\\n          },\\n          onEntryView: function (entry) {\\n            self.history.pushState(null, \\\"/entries/\\\" + entry.id);\\n          },\\n          columnMetadata: {\\n            \\\"ctime\\\": {\\n              \\\"header\\\": \\\"Created\\\",\\n              \\\"transformation\\\": formats.DateTimeTransformation\\n            },\\n            \\\"mtime\\\": {\\n              \\\"header\\\": \\\"Updated\\\",\\n              \\\"transformation\\\": formats.DateTimeTransformation\\n            },\\n            \\\"name\\\": {\\n              \\\"header\\\": \\\"Name\\\",\\n              \\\"transformation\\\": formats.MarkdownTransformation\\n            }\\n          } });\\n      }\\n    });\\n\\n    /* REACT HOT LOADER */\\n  }).call(undefined);\\n} finally {\\n  if (true) {\\n    (function () {\\n      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {\\n        var makeExportsHot = __webpack_require__(466);if (makeExportsHot(module, __webpack_require__(68))) {\\n          foundReactClasses = true;\\n        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {\\n          module.hot.accept(function (err) {\\n            if (err) {\\n              console.error(\\\"Cannot not apply hot update to \\\" + \\\"list.js\\\" + \\\": \\\" + err.message);\\n            }\\n          });\\n        }\\n      }module.hot.dispose(function (data) {\\n        data.makeHot = module.makeHot;data.foundReactClasses = foundReactClasses;\\n      });\\n    })();\\n  }\\n}\\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))\\n\\n/*****************\\n ** WEBPACK FOOTER\\n ** ./src/views/journals/list.js\\n ** module id = 496\\n ** module chunks = 0\\n **/\\n//# sourceURL=webpack:///./src/views/journals/list.js?\");\n\n/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/src/views/journals/list.js:\n   39:           self.history.pushState(null, \"/entries\");\n   45:           self.history.pushState(null, \"/entries/\" + entry.id);\n\n/Users/abe/Dropbox/Projects/regrok/node_modules/babel-core/browser.js:\n 28932:       \"entries\": \"array/entries\",\n 28969:       \"entries\": \"object/entries\",\n\n/Users/abe/Dropbox/Projects/regrok/node_modules/babel-plugin-runtime/lib/definitions.json:\n   15:       \"entries\": \"array/entries\",\n   52:       \"entries\": \"object/entries\",\n\n/Users/abe/Dropbox/Projects/regrok/node_modules/babel-runtime/core-js/array/entries.js:\n    1: module.exports = { \"default\": require(\"core-js/library/fn/array/entries\"), __esModule: true };\n\n/Users/abe/Dropbox/Projects/regrok/node_modules/babel-runtime/core-js/object/entries.js:\n    1: module.exports = { \"default\": require(\"core-js/library/fn/object/entries\"), __esModule: true };\n\n/Users/abe/Dropbox/Projects/regrok/public/built/bundle.js:\n 3503: 	eval(\"/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */\\\"use strict\\\";\\n\\nif (true) {\\n  (function () {\\n    var ReactHotAPI = __webpack_require__(5),\\n        RootInstanceProvider = __webpack_require__(13),\\n        ReactMount = __webpack_require__(15),\\n        React = __webpack_require__(68);module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {\\n      return RootInstanceProvider.getRootInstances(ReactMount);\\n    }, React);\\n  })();\\n}try {\\n  (function () {\\n\\n    var History = __webpack_require__(170).History,\\n        Markdown = __webpack_require__(497),\\n        Panel = __webpack_require__(218).Panel,\\n        Pick = __webpack_require__(511),\\n        React = __webpack_require__(512),\\n        Reflux = __webpack_require__(446),\\n        Router = __webpack_require__(170).Router,\\n        Uuid = __webpack_require__(530);\\n\\n    var actions = __webpack_require__(465),\\n        store = __webpack_require__(469),\\n        formats = __webpack_require__(531),\\n        Griddy = __webpack_require__(619);\\n\\n    module.exports = React.createClass({\\n      displayName: \\\"exports\\\",\\n\\n      mixins: [History, Reflux.listenTo(store, \\\"onLoad\\\")],\\n      getInitialState: function getInitialState() {\\n        return {\\n          \\\"entries\\\": []\\n        };\\n      },\\n      componentDidMount: function componentDidMount() {\\n        actions.load();\\n      },\\n      onLoad: function onLoad(entries) {\\n        this.setState({\\n          \\\"entries\\\": entries\\n        });\\n      },\\n      render: function render() {\\n        var self = this;\\n\\n        return React.createElement(Griddy, {\\n          data: this.state.entries,\\n          order: [\\\"name\\\", \\\"ctime\\\", \\\"mtime\\\"],\\n          onEntryAdd: function (entry) {\\n            self.history.pushState(null, \\\"/entries\\\");\\n          },\\n          onEntryDelete: function (entry) {\\n            actions.removeEntry(entry.id);\\n          },\\n          onEntryView: function (entry) {\\n            self.history.pushState(null, \\\"/entries/\\\" + entry.id);\\n          },\\n          columnMetadata: {\\n            \\\"ctime\\\": {\\n              \\\"header\\\": \\\"Created\\\",\\n              \\\"transformation\\\": formats.DateTimeTransformation\\n            },\\n            \\\"mtime\\\": {\\n              \\\"header\\\": \\\"Updated\\\",\\n              \\\"transformation\\\": formats.DateTimeTransformation\\n            },\\n            \\\"name\\\": {\\n              \\\"header\\\": \\\"Name\\\",\\n              \\\"transformation\\\": formats.MarkdownTransformation\\n            }\\n          } });\\n      }\\n    });\\n\\n    /* REACT HOT LOADER */\\n  }).call(undefined);\\n} finally {\\n  if (true) {\\n    (function () {\\n      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {\\n        var makeExportsHot = __webpack_require__(466);if (makeExportsHot(module, __webpack_require__(68))) {\\n          foundReactClasses = true;\\n        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {\\n          module.hot.accept(function (err) {\\n            if (err) {\\n              console.error(\\\"Cannot not apply hot update to \\\" + \\\"list.js\\\" + \\\": \\\" + err.message);\\n            }\\n          });\\n        }\\n      }module.hot.dispose(function (data) {\\n        data.makeHot = module.makeHot;data.foundReactClasses = foundReactClasses;\\n      });\\n    })();\\n  }\\n}\\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))\\n\\n/*****************\\n ** WEBPACK FOOTER\\n ** ./src/views/journals/list.js\\n ** module id = 496\\n ** module chunks = 0\\n **/\\n//# sourceURL=webpack:///./src/views/journals/list.js?\");\n\n/Users/abe/Dropbox/Projects/regrok/src/views/journals/edit.js:\n   66:     this.history.pushState(null, \"/entries\");\n\n/Users/abe/Dropbox/Projects/regrok/src/views/journals/list.js:\n   45:           self.history.pushState(null, \"/entries/\" + entry.id);\n\n20 matches across 13 files\n",
-			"settings":
-			{
-				"buffer_size": 9801,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "src/views/journals/list.js",
-			"settings":
-			{
-				"buffer_size": 1720,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/manage.js",
-			"settings":
-			{
-				"buffer_size": 873,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -646,27 +612,63 @@
 	},
 	"file_history":
 	[
+		"/Users/abe/Dropbox/Projects/regrok/public/css/codemirror.css",
+		"/Users/abe/Dropbox/Projects/regrok/public/dev.html",
+		"/Users/abe/Dropbox/Projects/regrok/node_modules/codemirror/lib/codemirror.css",
+		"/Users/abe/Dropbox/Projects/regrok/public/css/general.css",
+		"/Users/abe/Dropbox/Projects/regrok/Gruntfile.js",
 		"/Users/abe/Dropbox/Projects/regrok/src/views/journals/edit.js",
-		"/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/src/views/journals/list.js",
+		"/Users/abe/Dropbox/Projects/regrok/public/css/bigtext.css",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/BigText/index.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/app.js",
 		"/Users/abe/Dropbox/Projects/regrok/src/config/loader.js",
-		"/Users/abe/Dropbox/Projects/regrok/src/stores/encrypted_file.js",
 		"/Users/abe/Dropbox/Projects/regrok/src/views/journals/list.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/secure/login.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/BigText/body.js",
+		"/Users/abe/Dropbox/Projects/regrok/public/data.json",
+		"/Users/abe/Dropbox/Projects/regrok/node_modules/react-codemirror/lib/Codemirror.js",
+		"/Users/abe/Dropbox/Projects/regrok/node_modules/react-codemirror/src/Codemirror.js",
+		"/Users/abe/Dropbox/Projects/regrok/package.json",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/griddy/index.js",
+		"/Users/abe/Dropbox/Projects/regrok/webpack.config.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/BigText/footer.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/BigText/header.js",
 		"/Users/abe/Dropbox/Projects/regrok/src/manage.js",
 		"/Users/abe/Dropbox/Projects/regrok/src/stores/file.js",
-		"/Users/abe/Dropbox/Projects/regrok/src/views/login.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/secure/register.js",
+		"/Users/abe/Dropbox/Projects/regrok/public/data.json.1447016122017",
+		"/Users/abe/Dropbox/Projects/regrok/src/stores/helpers/file.js",
+		"/Users/abe/Dropbox/Projects/regrok/node_modules/exclude/package.json",
+		"/Users/abe/Dropbox/Projects/regrok/src/actions/index.js",
+		"/Users/abe/Dropbox/Projects/regrok/main.js",
+		"/Users/abe/Dropbox/Projects/regrok/public/prod.html",
+		"/Users/abe/Dropbox/Projects/regrok/public/css/griddy.css",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/journals/entry.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/journals/formats.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/security/index.js",
+		"/Users/abe/Dropbox/Projects/regrok/public/data.json.1446941712723",
+		"/Users/abe/Dropbox/Projects/regrok/public/data.json.1446941651790",
+		"/Users/abe/Dropbox/Projects/regrok/node_modules/reflux/src/listenTo.js",
+		"/Users/abe/Dropbox/Projects/regrok/node_modules/reflux-core/lib/ListenerMethods.js",
+		"/Users/abe/Dropbox/Projects/regrok/node_modules/reflux/src/index.js",
+		"/Users/abe/Dropbox/Projects/regrok/node_modules/reflux/src/ListenerMixin.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/stores/index.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/stores/file.js.bk",
+		"/Users/abe/Dropbox/Projects/regrok/public/data.json.1446591841928",
+		"/Users/abe/Dropbox/Projects/regrok/src/stores/encrypted_file.js.bk",
+		"/Users/abe/Dropbox/Projects/regrok/src/stores/middleware/security.js",
+		"/Users/abe/Dropbox/Projects/regrok/public/data.enc.json",
+		"/Users/abe/Dropbox/Projects/regrok/src/stores/encrypted_file.js",
+		"/Users/abe/Dropbox/Projects/regrok/.gitignore",
 		"/Users/abe/Dropbox/Projects/regrok/src/crypt/index.js",
+		"/Users/abe/Dropbox/Projects/regrok/src/views/login.js",
+		"/Users/abe/Dropbox/Projects/regrok/regrok.sublime-project",
+		"/Users/abe/Dropbox/Projects/regrok/dist/ReGrok-darwin-x64/ReGrok.app/Contents/Resources/app/src/views/journals/list.js",
 		"/Users/abe/Dropbox/Projects/regrok/src/config/index.js",
 		"/Users/abe/Dropbox/Projects/regrok/src/views/journals/initializer.js",
-		"/Users/abe/Dropbox/Projects/regrok/main.js",
-		"/Users/abe/Dropbox/Projects/regrok/Gruntfile.js",
 		"/Users/abe/Dropbox/Projects/regrok/README.md",
-		"/Users/abe/Dropbox/Projects/regrok/webpack.config.js",
-		"/Users/abe/Dropbox/Projects/regrok/public/dev.html",
-		"/Users/abe/Dropbox/Projects/regrok/package.json",
 		"/Users/abe/Dropbox/Projects/regrok/node_modules/nconf/lib/nconf.js",
-		"/Users/abe/Dropbox/Projects/regrok/public/prod.html",
 		"/Users/abe/Dropbox/Projects/regrok/public/index.html",
-		"/Users/abe/Dropbox/Projects/regrok/.gitignore",
 		"/Users/abe/Dropbox/Projects/regrok/Gruntfile",
 		"/Users/abe/Dropbox/Projects/regrok/ReGrok-darwin-x64/version",
 		"/Users/abe/Dropbox/Projects/regrok/ReGrok-darwin-x64/ReGrok.app/Contents/Info.plist",
@@ -737,43 +739,7 @@
 		"/Users/abe/Dropbox/Projects/getabe/web/flashcards/static/js/flashcards.js",
 		"/Users/abe/Dropbox/Projects/getabe/web/flashcards/templates/flashcards/flashcards_part.html",
 		"/Users/abe/Movies/rainy day/xvideos.txt",
-		"/Users/abe/Dropbox/Projects/getabe/web/urls.py",
-		"/Users/abe/Dropbox/Projects/getabe/web/settings.py",
-		"/Users/abe/Dropbox/Projects/getabe/web/static/src/js/pinyin_converter.js",
-		"/Users/abe/Dropbox/Projects/getabe/web/flashcards/templates/flashcards/index.html",
-		"/Users/abe/Dropbox/Projects/getabe/fabfile_nginx.py",
-		"/Users/abe/Dropbox/Projects/getabe/web/lib/views.py",
-		"/Users/abe/Dropbox/Projects/getabe/web/templates/page.html",
-		"/private/tmp/test.go",
-		"/private/tmp/Test.java",
-		"/private/tmp/test.c",
-		"/Users/abe/Desktop/d3/miserables.extra-small.json",
-		"/Users/abe/Desktop/d3/force.html",
-		"/Users/abe/Desktop/d3/tree.html",
-		"/Users/abe/Desktop/d3/miserables.small.json",
-		"/Users/abe/Desktop/d3/index.html",
-		"/Users/abe/Desktop/d3/miserables.json",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/js/jquery.csrf.js",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/manifest.json",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/options/index.html",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/options/index.js",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/bg/background.js",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/js/jquery.cookie.js",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/content/login.html",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/content/login.js",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/bg/hello.min.js",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/content/jquery.min.js",
-		"/Users/abe/Dropbox/Projects/Precall/Chrome Extension/src/content/url.js",
-		"/Users/abe/Downloads/jquery-2.1.3.min.js",
-		"/Users/abe/Dropbox/Projects/Precall/Precall/history/serializers.py",
-		"/Users/abe/Dropbox/Projects/Precall/Precall/history/models.py",
-		"/Users/abe/Dropbox/Projects/Precall/Precall/history/migrations/0001_initial.py",
-		"/Users/abe/Dropbox/Projects/precall/website/website/templates/favorites.html",
-		"/Users/abe/Dropbox/Projects/precall/website/website/templates/index.html",
-		"/Users/abe/Dropbox/Projects/precall/website/favorites/models.py",
-		"/Users/abe/Dropbox/Projects/precall/website/accounts/__init__.py",
-		"/Users/abe/Dropbox/Projects/precall/website/website/settings.py",
-		"/Users/abe/Dropbox/Projects/precall/website/favorites/migrations/0002_auto_20141214_2256.py"
+		"/Users/abe/Dropbox/Projects/getabe/web/urls.py"
 	],
 	"find":
 	{
@@ -781,9 +747,14 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
+			"/Users/abe/Dropbox/Projects/regrok/src",
+			"/Users/abe/Dropbox/Projects/regrok",
+			"/Users/abe/Dropbox/Projects/regrok/src",
+			"/Users/abe/Dropbox/Projects/regrok/public",
+			"/Users/abe/Dropbox/Projects/regrok/src",
 			"",
 			"/Users/abe/Dropbox/Projects/regrok/node_modules/nconf",
 			"",
@@ -878,6 +849,106 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sol",
+			"Codemirror",
+			"You have no shit",
+			"data",
+			"name",
+			"subjectOnKeyDownHandler",
+			"class=",
+			"contentEditable",
+			"contentEdi",
+			"register",
+			"0px",
+			"Pick",
+			"Exclude",
+			"Exclude\\",
+			"exclude",
+			"ready",
+			"logout",
+			"this.props.entries",
+			"this.props.params.id",
+			"Reflux",
+			"data",
+			"save",
+			"addEntry",
+			"setPassword",
+			"status",
+			"entries",
+			"[],",
+			"console",
+			"slice",
+			"self",
+			"console",
+			"self.middleware",
+			"self",
+			"Reflux.listenTo",
+			"triggerStatus",
+			"console",
+			"Actions",
+			"store",
+			"Reflux.listenTo",
+			"here1",
+			"listenTo",
+			"FULL_STATUS",
+			"isDatabaseReady",
+			"ready",
+			"databaseIsReady",
+			"status(",
+			"status()",
+			"onLoad",
+			"applyMiddleware",
+			"pipeline_state",
+			"__dirname",
+			"config",
+			"__dirname",
+			"addEntry",
+			"load",
+			"console.log",
+			"here1",
+			"console.log",
+			"load",
+			"here1",
+			"help1",
+			"isDatabaseReady",
+			"console.log",
+			"_.",
+			"status",
+			"this.status",
+			"data",
+			"isLoaded",
+			"setPassword",
+			"onSetPassword",
+			"setPassword",
+			"register",
+			"actions.reset",
+			"register",
+			"actions.setPassword",
+			"save",
+			"repository:crypto",
+			"Crypto",
+			"console",
+			"entries",
+			"/entries",
+			"listenTo",
+			"fs",
+			"Config",
+			"Store",
+			"Reflux",
+			"actions",
+			"store",
+			"Actions",
+			"_.",
+			"crypto",
+			"security",
+			"Config.get(\"repository:file:path\")",
+			"self",
+			"location",
+			"Crypt",
+			"Secure",
+			"enSecureed",
+			"Crypt",
+			"../store",
 			"/entries",
 			"this.entries",
 			"actions",
@@ -905,107 +976,7 @@
 			"webpack",
 			"path",
 			"electron-prebuilt",
-			"regrok",
-			"index.html",
-			"index",
-			"test",
-			"salt",
-			"Bcrypt",
-			"crypto:",
-			"crypto",
-			"config",
-			"bcrypt",
-			"conf",
-			"conf.",
-			"full_encrypted_contents",
-			"config",
-			"actions",
-			"crypt",
-			"config",
-			"actions",
-			"repository:file",
-			"store",
-			"onLoad",
-			"file",
-			"./file",
-			"CommonJS",
-			"common",
-			"node",
-			"readFileSync",
-			"readdirSync",
-			"../store",
-			"..store",
-			"../../store",
-			"view/",
-			"babel",
-			"repo.js",
-			"modules.exports",
-			"module.export",
-			"History",
-			"Reflux",
-			"Griddy",
-			";\n",
-			"DateTimeTransformation",
-			"Panel",
-			"MarkdownTransformation",
-			"Markdown",
-			"Input",
-			"Button",
-			"Router",
-			"Uuid",
-			"Input",
-			"Button",
-			"Router",
-			"React",
-			"Pick",
-			"Panel",
-			"Journal",
-			"self",
-			"path",
-			"self.data",
-			"cb",
-			"listen",
-			"$this",
-			"parts",
-			".js",
-			"katex",
-			"History",
-			"Navigation",
-			"Mixins",
-			"History",
-			"Journal.Views.Entry",
-			"addons",
-			"onRowDelete",
-			"Moment",
-			"connectToRepo",
-			"entries",
-			"console",
-			"Repo",
-			"Link",
-			"IndexLink",
-			"createElement",
-			"Link",
-			"Moment",
-			"NavItem",
-			"Uuid",
-			"bootstrap.",
-			"bootstrap",
-			"uuid",
-			"fs",
-			"Bootstrap",
-			"Router",
-			"jquery",
-			"Entry",
-			"Repo",
-			"getInit",
-			"selected",
-			"items",
-			"selectedItems",
-			"...",
-			"]",
-			"...",
-			"getOrderedRowData",
-			"repo"
+			"regrok"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1013,6 +984,15 @@
 		"regex": false,
 		"replace_history":
 		[
+			"0",
+			"{},",
+			"genericTrigger",
+			"triggerStatus()",
+			"repository:security",
+			"this.location",
+			"Security",
+			"encrypted",
+			"Secure",
 			"repository:crypto:",
 			"Config",
 			"Actions",
@@ -1131,16 +1111,7 @@
 			"",
 			"href=\"/static/css",
 			"src=\"/static/css",
-			"src=\"/static/js",
-			" src=\"/static/js",
-			" ",
-			"\\n",
-			"",
-			"aa Lorem",
-			"href=\"#\"",
-			"",
-			"setup_all",
-			"xxl-button"
+			"src=\"/static/js"
 		],
 		"reverse": false,
 		"show_context": false,
@@ -1151,483 +1122,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/views/app.js",
-					"settings":
-					{
-						"buffer_size": 404,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								339,
-								339
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"devel": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": "load-save",
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"settings":
-					{
-						"buffer_size": 9801,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										197,
-										205
-									],
-									[
-										240,
-										248
-									],
-									[
-										430,
-										438
-									],
-									[
-										472,
-										480
-									],
-									[
-										699,
-										707
-									],
-									[
-										949,
-										957
-									],
-									[
-										2934,
-										2942
-									],
-									[
-										3151,
-										3159
-									],
-									[
-										4964,
-										4972
-									],
-									[
-										5023,
-										5031
-									],
-									[
-										5150,
-										5158
-									],
-									[
-										5193,
-										5201
-									],
-									[
-										5326,
-										5334
-									],
-									[
-										5368,
-										5376
-									],
-									[
-										5538,
-										5546
-									],
-									[
-										5731,
-										5739
-									],
-									[
-										7659,
-										7667
-									],
-									[
-										7876,
-										7884
-									],
-									[
-										9626,
-										9634
-									],
-									[
-										9749,
-										9757
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								9751,
-								9751
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 428.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/views/journals/list.js",
-					"settings":
-					{
-						"buffer_size": 1720,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1158,
-								1158
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"devel": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": "load-save",
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/manage.js",
-					"settings":
-					{
-						"buffer_size": 873,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								351,
-								351
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"devel": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": "load-save",
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1677,8 +1173,72 @@
 		"selected_items":
 		[
 			[
+				"codemirror.css",
+				"node_modules/codemirror/lib/codemirror.css"
+			],
+			[
+				"app.js",
+				"src/views/app.js"
+			],
+			[
+				"loader.js",
+				"src/config/loader.js"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"list",
+				"src/views/journals/list.js"
+			],
+			[
+				"login",
+				"src/views/secure/login.js"
+			],
+			[
+				"login.js",
+				"src/views/secure/login.js"
+			],
+			[
+				"main.js",
+				"main.js"
+			],
+			[
+				"actions/index",
+				"src/actions/index.js"
+			],
+			[
+				"register",
+				"src/views/secure/register.js"
+			],
+			[
+				"store/index",
+				"src/stores/index.js"
+			],
+			[
+				"list.js",
+				"src/views/journals/list.js"
+			],
+			[
+				"security",
+				"src/security/index.js"
+			],
+			[
 				"loader",
 				"src/config/loader.js"
+			],
+			[
+				"prod",
+				"public/prod.html"
+			],
+			[
+				".html",
+				"public/dev.html"
 			],
 			[
 				"nconf.js",
@@ -2123,70 +1683,6 @@
 			[
 				"permissions",
 				"projects/common/dataleap_common/companies/permissions.py"
-			],
-			[
-				"permission",
-				"projects/common/dataleap_common/companies/permissions.py"
-			],
-			[
-				"companies/api",
-				"projects/web/companies/api.py"
-			],
-			[
-				"invoices-vendor",
-				"projects/web/invoices/static/js/invoices-vendors.ko.js"
-			],
-			[
-				"base.ht",
-				"projects/web/templates/base.html"
-			],
-			[
-				"validate.js",
-				"projects/common/dataleap_common/static/js/ko.validate.js"
-			],
-			[
-				"js/index",
-				"projects/web/website/static/js/index.js"
-			],
-			[
-				"pseria",
-				"projects/common/dataleap_common/companies/serializers.py"
-			],
-			[
-				"rest_framework/gener",
-				"thirdparty/django-rest-framework/rest_framework/generics.py"
-			],
-			[
-				"seriali",
-				"projects/common/dataleap_common/companies/serializers.py"
-			],
-			[
-				"seria",
-				"projects/common/dataleap_common/companies/serializers.py"
-			],
-			[
-				"phonenumb",
-				"projects/common/dataleap_common/static/js/ko.phonenumber.js"
-			],
-			[
-				"restviews.py",
-				"thirdparty/django-rest-framework/rest_framework/views.py"
-			],
-			[
-				"rest_framework/",
-				"thirdparty/django-rest-framework/rest_framework/views.py"
-			],
-			[
-				"invoice/ser",
-				"projects/common/dataleap_common/invoices/serializers.py"
-			],
-			[
-				"companies/serial",
-				"projects/common/dataleap_common/companies/serializers.py"
-			],
-			[
-				"companies/url",
-				"projects/web/companies/urls.py"
 			]
 		],
 		"width": 0.0

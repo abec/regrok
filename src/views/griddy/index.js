@@ -85,7 +85,7 @@ var Controls = React.createClass({
 
 var Row = React.createClass({
   propTypes: {
-    "id": React.PropTypes.string.isRequired,
+    "id": React.PropTypes.string,
     "data": React.PropTypes.object.isRequired,
     "columnMetadata": React.PropTypes.object,
     "DefaultValueTransformation": React.PropTypes.func,
@@ -110,7 +110,7 @@ var Row = React.createClass({
     var cols = [];
     for (var index in ordereddata) {
       cols.push((
-        <td>{ordereddata[index]}</td>
+        <td key={index}>{ordereddata[index]}</td>
       ));
     }
     return (

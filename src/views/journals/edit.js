@@ -7,9 +7,9 @@ var _ = require('underscore'),
     Markdown = require('react-markdown'),
     Panel = require('react-bootstrap').Panel,
     Pick = require('object.pick'),
-    React = require('react/addons'),
-    ReactCodeMirror = require('react-codemirror'),
-    Uuid = require('uuid4');
+    React = require('react'),
+    ReactUpdate = require('react/lib/update'),
+    ReactCodeMirror = require('react-codemirror');
 
 var actions = require('../../actions'),
     store = require('../../stores');
@@ -78,14 +78,14 @@ module.exports = React.createClass({
     var subject = this.state.data.substring(0, firstLine);
     var data = this.state.data.substring(firstLine + 1);
     if (this.isNew()) {
-      actions.save([
-        React.addons.update(
+      actions.add(
+        ReactUpdate(
           this.getEntry(), {
-            "id": {$set: Uuid()},
             "name": {$set: subject},
             "data": {$set: data},
           })
-        ]);
+        );
+      actions.save();
     } else {
       // TODO: Update case
     }
@@ -129,7 +129,7 @@ module.exports = React.createClass({
     return !this.props.id;
   },
   getEntry: function() {
-    return React.addons.update(
+    return ReactUpdate(
       Pick(this.props, "id", "name", "data", "ctime", "mtime", "isMarkdownEnabled"), {
         "isMarkdownEnabled": {$set: this.state.isMarkdownEnabled}
       });

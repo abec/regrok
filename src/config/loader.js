@@ -9,8 +9,8 @@ var DEFAULT_ROOT_PATH = ipc.sendSync('appdir');
 var DEFAULT_CONFIG = {
   "root_path": DEFAULT_ROOT_PATH,
   "repository": {
-    "file": {
-      "path": path.join(DEFAULT_ROOT_PATH, "public", "data.json")
+    "leveldb": {
+      "path": path.join(DEFAULT_ROOT_PATH, "public", "data.leveldb")
     },
     "security": {
       "iv_size": 16,
@@ -18,7 +18,7 @@ var DEFAULT_CONFIG = {
       "rounds_factor": 10,
       "enabled": true
     },
-    "use": "file"
+    "use": "leveldb"
   }
 };
 
