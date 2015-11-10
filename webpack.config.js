@@ -31,5 +31,6 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
-  target: "atom"
+  target: "atom",
+  noParse: /lie\.js$|\/leveldown\//
 };
