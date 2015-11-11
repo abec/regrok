@@ -7,6 +7,7 @@ A basic journal application for desktop environments with application level encr
 1. Keep a journal easily
 2. Security (It should be like a lock on your journal). This should be provided via client-side encryption. (Works, but under development)
 3. Tagging for ease of personal data collection in a secure way (Under development)
+
 ## Installation
 1. git clone https://github.com/abec/regrok.git
 2. cd regrok
@@ -14,7 +15,9 @@ A basic journal application for desktop environments with application level encr
 4. grunt build
 5. mv dist/*/ReGrok.app ~/Dropbox
 6. open ~/Dropbox/ReGrok.app
+
 ## Roadmap
+
 ### 0.1.0
 1. Basic client side encryption
 2. Write an entry
@@ -22,6 +25,7 @@ A basic journal application for desktop environments with application level encr
 4. List of entries
 5. Markdown support
 6. Provide some kind of meaningful errors ;)
+
 ### 0.2.0
 1. Pluggable client side encryption
 2. Update an entry
@@ -29,5 +33,6 @@ A basic journal application for desktop environments with application level encr
 4. Provide better logging
 5. Database driven configuration through settings
 6. Data reset
+
 ### 0.3.0
 1. Mineable tagging
