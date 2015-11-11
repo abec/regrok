@@ -35,7 +35,7 @@ app.on('ready', function() {
   else mainWindow.loadUrl('file://' + __dirname + '/public/prod.html');
 
   // Open the devtools.
-  mainWindow.openDevTools();
+  if (process.env.DEV) mainWindow.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
