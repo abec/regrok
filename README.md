@@ -28,5 +28,6 @@ A basic journal application for desktop environments with application level encr
 3. Improve error handling
 4. Provide better logging
 5. Database driven configuration through settings
+6. Data reset
 ### 0.3.0
 1. Mineable tagging
