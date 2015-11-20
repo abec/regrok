@@ -32,7 +32,9 @@ module.exports = {
     new webpack.NoErrorsPlugin()
   ],
   externals: [{
-    'leveldown': 'commonjs leveldown'
+    'leveldown': 'commonjs leveldown',
+    'deasync': 'commonjs deasync',
+    'nconf-level': 'commonjs nconf-level'
   }],
   target: "atom"
 };

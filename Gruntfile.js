@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     "webpack-dev-server": {
       options: {
         webpack: webpackConfig,
-        contentBase: __dirname + '/public',
+        contentBase: path.join(__dirname, '/public'),
         publicPath: 'http://localhost:8080/built/'
       },
       start: {
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     spawn: {
       dev: {
         command: 'find',
-        commandArgs: [__dirname + '/node_modules/electron-prebuilt/dist', '-name', 'Electron', '-exec', '{{}}', __dirname, '\\;'],
+        commandArgs: [path.join(__dirname, '/node_modules/electron-prebuilt/dist'), '-name', 'Electron', '-exec', '{{}}', __dirname, '\\;'],
         directory: __dirname,
         groupFiles: true,
         passThrough: false,
@@ -48,14 +48,14 @@ module.exports = function(grunt) {
       }
     },
     clean: [
-      __dirname + "/dist",
-      __dirname + "/public/built",
-      __dirname + "/public/data.json",
-      __dirname + "/public/data.*.json",
-      __dirname + "/public/data.json.*",
-      __dirname + "/public/data.leveldb",
-      __dirname + "/public/data.*.leveldb",
-      __dirname + "/public/data.leveldb.*",
+      path.join(__dirname, "/dist"),
+      path.join(__dirname, "/public/built"),
+      path.join(__dirname, "/public/data.json"),
+      path.join(__dirname, "/public/data.*.json"),
+      path.join(__dirname, "/public/data.json.*"),
+      path.join(__dirname, "/public/data.leveldb"),
+      path.join(__dirname, "/public/data.*.leveldb"),
+      path.join(__dirname, "/public/data.leveldb.*"),
     ],
     electron: {
       mac: {

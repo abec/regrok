@@ -11,6 +11,7 @@ $(function() {
     <Router>
       <Route path="/" component={require('./views/app.js')}>
         <Route path="login" component={require('./views/secure/login.js')} />
+        <Route path="settings" component={require('./views/settings/index.js')} />
 
         <IndexRoute component={require('./views/journals/edit.js')} />
         <Route path="entries" component={require('./views/journals/list.js')} />

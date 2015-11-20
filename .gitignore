@@ -34,3 +34,5 @@ public/data.leveldb
 
 # Distribution
 dist
+settings.leveldb
+data.leveldb

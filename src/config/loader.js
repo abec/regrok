@@ -3,6 +3,7 @@ var fs = require('fs');
 var path = require('path'),
     nconf = require('nconf'),
     ipc = require('ipc');
+require('nconf-level')(nconf);
 
 var DEFAULT_ROOT_PATH = ipc.sendSync('appdir');
 
@@ -24,6 +25,7 @@ var DEFAULT_CONFIG = {
 
 nconf.argv()
      .env()
+     .use("level", { path: path.join(DEFAULT_ROOT_PATH, "public", "settings.leveldb") })
      .file(process.env.CONFIG_FILE || path.join(DEFAULT_ROOT_PATH, "config.ini"))
      .defaults(DEFAULT_CONFIG);
 

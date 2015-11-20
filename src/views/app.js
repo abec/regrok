@@ -60,6 +60,13 @@ module.exports = React.createClass({
             </a>
           </li>
         ),
+        settings = (
+          <li>
+            <Link to={"/settings"} {...this.props}>
+              <Bootstrap.Glyphicon glyph="cog" />
+            </Link>
+          </li>
+        ),
         list = (
           <li className={ClassNames({
             "hide": this.props.params.pathname == "/entries"
@@ -82,6 +89,7 @@ module.exports = React.createClass({
       <Bootstrap.Navbar>
         <Bootstrap.Nav right>
           {(this.state.ready) ? logout : null}
+          {settings}
         </Bootstrap.Nav>
         <Bootstrap.Nav>
           {(this.state.ready && this.props.params.pathname != "/entries") ? list : null}
@@ -91,7 +99,7 @@ module.exports = React.createClass({
     );
   },
   redirect: function() {
-    if (_.indexOf(["/login"], this.props.location.pathname) == -1) {
+    if (_.indexOf(["/login", "/settings"], this.props.location.pathname) == -1) {
       this.history.pushState(null, "/login");
     }
   }

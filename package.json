@@ -16,6 +16,7 @@
     "levelup": "^1.2.1",
     "moment": "^2.10.6",
     "nconf": "git+https://github.com/indexzero/nconf#d501e7b04ce0c04b950f94ca8b7d31d26e50fc61",
+    "nconf-level": "git+https://github.com/abec/nconf-level/#9c0a17cd44e49f81d06358336a82b145d0411727",
     "node": "0.0.0",
     "object.pick": "^1.1.1",
     "react": "^0.14.2",
