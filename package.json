@@ -21,6 +21,7 @@
     "object.pick": "^1.1.1",
     "react": "^0.14.2",
     "react-bootstrap": "^0.27.3",
+    "react-bootstrap-validation": "^0.1.9",
     "react-codemirror": "git+https://github.com/abec/react-codemirror#9c72dc4c25d7ddd07459f8d893cada7291b69ebc",
     "react-dom": "^0.14.2",
     "react-latex": "0.0.8",

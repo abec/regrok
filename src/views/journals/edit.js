@@ -1,6 +1,6 @@
 
 var _ = require('underscore'),
-    Button = require('react-bootstrap').Button,
+    Bootstrap = require('react-bootstrap'),
     CodeMirror = require('codemirror'),
     History = require('react-router').History,
     Input = require('react-bootstrap').Input,
@@ -55,7 +55,8 @@ module.exports = React.createClass({
   getInitialState: function() {
     return {
       "data": "",
-      "isMarkdownEnabled": true
+      "isMarkdownEnabled": true,
+      "error": null
     };
   },
   getDefaultProps: function() {
@@ -73,26 +74,49 @@ module.exports = React.createClass({
       "isMarkdownEnabled": this.refs.isMarkdownEnabled.getChecked()
     });
   },
-  onSubmitJournal: function(e) {
-    var firstLine = _.indexOf(this.state.data, "\n");
-    var subject = this.state.data.substring(0, firstLine);
-    var data = this.state.data.substring(firstLine + 1);
+  onUpdateData: function(data) {
+    this.setState({ data: data });
+  },
+  submitValidation: function(entry) {
+    if (!entry.name) {
+      this.setState({ error: new Error("No subject provided.") });
+      return false;
+    }
+
+    return true;
+  },
+  submit: function(entry) {
     if (this.isNew()) {
-      actions.add(
-        ReactUpdate(
-          this.getEntry(), {
-            "name": {$set: subject},
-            "data": {$set: data},
-          })
-        );
+      actions.add(entry);
       actions.save();
     } else {
       // TODO: Update case
     }
     this.history.pushState(null, "/entries");
   },
-  onUpdateData: function(data) {
-    this.setState({data: data});
+  onSubmitJournal: function(e) {
+    var firstLine = _.indexOf(this.state.data, "\n");
+    var subject = this.state.data.substring(0, firstLine);
+    var data = this.state.data.substring(firstLine + 1);
+    var entry = ReactUpdate(this.getEntry(), {
+      "name": {$set: subject},
+      "data": {$set: data},
+    });
+
+    if (this.submitValidation(entry)) this.submit(entry);
+  },
+  renderErrorModal: function() {
+    var self = this;
+    return (
+      <Bootstrap.Modal show={!!this.state.error} onHide={function() {
+        self.setState({ error: null });
+      }}>
+        <Bootstrap.Modal.Header closeButton></Bootstrap.Modal.Header>
+        <Bootstrap.Modal.Body>
+          <Bootstrap.Alert bsStyle="danger">{(this.state.error || "").message}</Bootstrap.Alert>
+        </Bootstrap.Modal.Body>
+      </Bootstrap.Modal>
+    );
   },
   render: function() {
     var isMarkdownEnabledProps = {
@@ -100,6 +124,7 @@ module.exports = React.createClass({
     };
     return (
       <div>
+        {this.renderErrorModal()}
         <ReactCodeMirror
             value={this.state.data}
             onChange={this.onUpdateData}
@@ -120,7 +145,7 @@ module.exports = React.createClass({
                   value={this.state.isMarkdownEnabled}
                   label="Markdown Enabled"
                   onChange={this.onIsMarkdownEnabledChangeHandler} />
-          <Button onClick={this.onSubmitJournal}>Submit</Button>
+          <Bootstrap.Button onClick={this.onSubmitJournal}>Submit</Bootstrap.Button>
         </div>
       </div>
     );

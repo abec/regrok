@@ -12,7 +12,8 @@ module.exports = React.createClass({
   getInitialState: function() {
     return {
       "password": null,
-      "type": "login"
+      "type": "login",
+      "error": null
     };
   },
   componentDidMount: function() {
@@ -21,6 +22,8 @@ module.exports = React.createClass({
   onUpdate: function(data) {
     if (data.ready) {
       this.history.pushState(null, "/");
+    } else if (data.error) {
+      this.setState({ error: data.error });
     }
   },
   onPasswordChange: function(e) {
@@ -32,13 +35,17 @@ module.exports = React.createClass({
     });
   },
   loginOrRegister: function(e) {
-    if (e.type == "keyup") {
+    switch(e.type) {
+      case "keyup":
       // Enter event
       if (e.keyCode == 13) {
         Actions[this.state.type](this.state.password);
       }
-    } else {
+      break;
+
+      case "click":
       Actions[this.state.type](this.state.password);
+      break;
     }
     e.stopPropagation();
     e.preventDefault();
@@ -48,6 +55,7 @@ module.exports = React.createClass({
       <div>
         <h1>Unlock</h1>
         <form>
+          {(this.state.error != null) ? (<Bootstrap.Alert bsStyle="danger">{this.state.error.toString()}</Bootstrap.Alert>) : null}
           <Bootstrap.Input
             ref="password"
             type="password"
@@ -67,7 +75,8 @@ module.exports = React.createClass({
                 <Bootstrap.MenuItem eventKey="login">Login</Bootstrap.MenuItem>
                 <Bootstrap.MenuItem eventKey="register">Register</Bootstrap.MenuItem>
               </Bootstrap.SplitButton>
-            } />
+            }
+            {...((this.state.error != null) ? {bsStyle: "error"} : null)} />
         </form>
       </div>
     );

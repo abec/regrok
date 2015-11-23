@@ -20,7 +20,6 @@ var LevelDBStore = Reflux.createStore({
     console.debug("Loading LevelDB Store with the path (" + Config.get("repository:leveldb:path") + ").");
 
     this.location = Config.get("repository:leveldb:path");
-    // @TODO(Abe): Security.
     this.security_enabled = Config.get("repository:security:enabled");
 
     this.db = null;
@@ -60,10 +59,20 @@ var LevelDBStore = Reflux.createStore({
     self.load();
     self.checkPassword()
         .then(function(passwordIsValid) {
-          if (!passwordIsValid) {
+          if (passwordIsValid) {
+            self.error = null;
+            return self.isReady().then(function() {
+              return self.genericTrigger();
+            });
+          } else {
             self.password = null;
+            self.error = new Error("Password is incorrect");
+            return self.genericTrigger();
           }
-          self.genericTrigger();
+        })
+        .catch(function(err) {
+          self.error = err;
+          return self.genericTrigger();
         });
   },
   onLogout: function() {
@@ -124,6 +133,13 @@ var LevelDBStore = Reflux.createStore({
     return self.dbpromise.get(PASSWORD_CHECK_KEY).then(function(value) {
       return self.decrypt(self.password, value).then(function(contents) {
         return contents == PASSWORD_CHECK_VALUE;
+      }).catch(function(err) {
+        // Decrypt error
+        if (err.message.indexOf("bad decrypt") != -1) {
+          return false;
+        } else {
+          return Promise.reject(err);
+        }
       });
     });
   },
@@ -190,36 +206,44 @@ var LevelDBStore = Reflux.createStore({
   isReady: function() {
     var self = this;
 
-    if (!this.dbpromise) return Promise.reject("Database has not been loaded");
+    if (!this.dbpromise) {
+      console.debug("Database has not been loaded");
+      return Promise.resolve(false);
+    }
 
     // 1. Check DB is open
     // 2. Check for password or security is off.
     // 3. @TODO(Abe): Password checks out if in use.
     return Promise.resolve(this.db.isOpen())
       .then(function(ready) {
-        return ready && (!self.security_enabled || !!self.password);
+        self.ready = ready && (!self.security_enabled || !!self.password);
+        return self.ready;
       });
   },
   genericTrigger: function(extra) {
     var self = this;
-    self.isReady().then(function(ready) {
-      self.ready = ready;
-      if (ready) {
-        return self.list();
+
+    return new Promise(function(resolve, reject) {
+      if (self.ready) {
+        resolve(self.list());
       } else {
-        return null;
+        resolve(null);
       }
-    }).then(function(entries) {
+    })
+    .then(function(entries) {
       self.trigger(_.extend({
         ready: self.ready,
-        entries: entries
+        entries: entries,
+        error: self.error
       }, extra || {}));
-    }).catch(function(err) {
+    })
+    .catch(function(err) {
       console.debug(err);
       // @TODO(Abe): Error handling.
       self.trigger(_.extend({
         ready: self.ready,
-        entries: null
+        entries: null,
+        error: err
       }, extra || {}));
     });
   }
