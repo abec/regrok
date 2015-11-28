@@ -51,7 +51,8 @@ var LevelDBStore = Reflux.createStore({
     this.password = password;
     this.load();
     this.setCheckPassword()
-        .then(this.genericTrigger.bind(this, null));
+    .then(this.isReady.bind(this, null))
+    .then(this.genericTrigger.bind(this, null));
   },
   onLogin: function(password) {
     var self = this;

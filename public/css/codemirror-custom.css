@@ -1,0 +1,10 @@
+.CodeMirror-code pre {
+  font-family: arial;
+}
+
+.CodeMirror-code .cm-header {
+  color: black;
+  font-size: 18px;
+  font-family: arial;
+  font-weight: bold;
+}
