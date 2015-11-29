@@ -21,6 +21,9 @@ A basic journal application for desktop environments with application level encr
 ##### 3. Manage it in list
 ![List of journals](https://raw.githubusercontent.com/abec/regrok/master/docs/img/manage-entries.png)
 
+## Compatibility
+1. Mac OS X (tested with 10.11.1)
+
 ## Roadmap
 
 ### 0.1.0
@@ -31,6 +34,7 @@ A basic journal application for desktop environments with application level encr
 5. Markdown support
 6. Provide some kind of meaningful errors ;)
 7. Database driven configuration through settings
+8. Mac OS X support
 
 ### 0.2.0
 1. Pluggable client side encryption
