@@ -46,3 +46,5 @@ A basic journal application for desktop environments with application level encr
 
 ### 0.3.0
 1. Mineable tagging
+2. File browsing in settings
+3. Windows support?
