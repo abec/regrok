@@ -25,14 +25,15 @@ A basic journal application for desktop environments with application level encr
 4. List of entries
 5. Markdown support
 6. Provide some kind of meaningful errors ;)
+7. Database driven configuration through settings
 
 ### 0.2.0
 1. Pluggable client side encryption
 2. Update an entry
 3. Improve error handling
 4. Provide better logging
-5. Database driven configuration through settings
-6. Data reset
+5. Data reset
+6. Sessionization?
 
 ### 0.3.0
 1. Mineable tagging
