@@ -69,54 +69,8 @@ module.exports = React.createClass({
       "isMarkdownEnabled": true
     };
   },
-  onIsMarkdownEnabledChangeHandler: function(e) {
-    this.setState({
-      "isMarkdownEnabled": this.refs.isMarkdownEnabled.getChecked()
-    });
-  },
   onUpdateData: function(data) {
     this.setState({ data: data });
-  },
-  submitValidation: function(entry) {
-    if (!entry.name) {
-      this.setState({ error: new Error("No subject provided.") });
-      return false;
-    }
-
-    return true;
-  },
-  submit: function(entry) {
-    if (this.isNew()) {
-      actions.add(entry);
-      actions.save();
-    } else {
-      // TODO: Update case
-    }
-    this.history.pushState(null, "/entries");
-  },
-  onSubmitJournal: function(e) {
-    var firstLine = _.indexOf(this.state.data, "\n");
-    var subject = this.state.data.substring(0, firstLine);
-    var data = this.state.data.substring(firstLine + 1);
-    var entry = ReactUpdate(this.getEntry(), {
-      "name": {$set: subject},
-      "data": {$set: data},
-    });
-
-    if (this.submitValidation(entry)) this.submit(entry);
-  },
-  renderErrorModal: function() {
-    var self = this;
-    return (
-      <Bootstrap.Modal show={!!this.state.error} onHide={function() {
-        self.setState({ error: null });
-      }}>
-        <Bootstrap.Modal.Header closeButton></Bootstrap.Modal.Header>
-        <Bootstrap.Modal.Body>
-          <Bootstrap.Alert bsStyle="danger">{(this.state.error || "").message}</Bootstrap.Alert>
-        </Bootstrap.Modal.Body>
-      </Bootstrap.Modal>
-    );
   },
   render: function() {
     var isMarkdownEnabledProps = {
@@ -149,6 +103,52 @@ module.exports = React.createClass({
         </div>
       </div>
     );
+  },
+  renderErrorModal: function() {
+    var self = this;
+    return (
+      <Bootstrap.Modal show={!!this.state.error} onHide={function() {
+        self.setState({ error: null });
+      }}>
+        <Bootstrap.Modal.Header closeButton></Bootstrap.Modal.Header>
+        <Bootstrap.Modal.Body>
+          <Bootstrap.Alert bsStyle="danger">{(this.state.error || "").message}</Bootstrap.Alert>
+        </Bootstrap.Modal.Body>
+      </Bootstrap.Modal>
+    );
+  },
+  onSubmitJournal: function(e) {
+    var firstLine = _.indexOf(this.state.data, "\n");
+    var subject = this.state.data.substring(0, firstLine);
+    var data = this.state.data.substring(firstLine + 1);
+    var entry = ReactUpdate(this.getEntry(), {
+      "name": {$set: subject},
+      "data": {$set: data},
+    });
+
+    if (this.submitValidation(entry)) this.submit(entry);
+  },
+  onIsMarkdownEnabledChangeHandler: function(e) {
+    this.setState({
+      "isMarkdownEnabled": this.refs.isMarkdownEnabled.getChecked()
+    });
+  },
+  submitValidation: function(entry) {
+    if (!entry.name) {
+      this.setState({ error: new Error("No subject provided.") });
+      return false;
+    }
+
+    return true;
+  },
+  submit: function(entry) {
+    if (this.isNew()) {
+      actions.add(entry);
+      actions.save();
+    } else {
+      // TODO: Update case
+    }
+    this.history.pushState(null, "/entries");
   },
   isNew: function() {
     return !this.props.id;

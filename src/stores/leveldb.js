@@ -1,4 +1,7 @@
-var fs = require('fs');
+var fs = require('fs'),
+    lockfile = require('lockfile'),
+    os = require('os'),
+    path = require('path');
 
 var _ = require('underscore'),
     Promise = require('bluebird'),
@@ -12,7 +15,11 @@ var Actions = require('../actions'),
 
 var LAST_ID_KEY = "LAST_ID",
     PASSWORD_CHECK_KEY = "PASSWORD_CHECK",
-    PASSWORD_CHECK_VALUE = "PASSWORD_CHECK";
+    PASSWORD_CHECK_VALUE = "PASSWORD_CHECK",
+    LOCKFILE_PATH = path.join(os.tmpdir(), "fossa-level-store.lock");
+
+var lock = Promise.promisify(lockfile.lock),
+    unlock = Promise.promisify(lockfile.unlock);
 
 var LevelDBStore = Reflux.createStore({
   listenables: Actions,
@@ -37,13 +44,18 @@ var LevelDBStore = Reflux.createStore({
     this.genericTrigger();
   },
   onSave: function() {
-    this.genericTrigger();
+    this.isReady()
+    .then(this.genericTrigger.bind(this, null));
   },
   onAdd: function(entry) {
-    this.add(entry).then(this.genericTrigger.bind(this, null));
+    this.add(entry)
+    .then(this.isReady.bind(this, null))
+    .then(this.genericTrigger.bind(this, null));
   },
   onRemove: function(entry) {
-    this.remove(entry).then(this.genericTrigger.bind(this, null));
+    this.remove(entry)
+    .then(this.isReady.bind(this, null))
+    .then(this.genericTrigger.bind(this, null));
   },
   onRegister: function(password) {
     var self = this;
@@ -107,7 +119,13 @@ var LevelDBStore = Reflux.createStore({
       // @TODO(Abe): Decrypt values.
       var entries = [];
 
-      self.db.createReadStream()
+      lock(LOCKFILE_PATH, {
+        wait: 100,
+        retries: 100,
+        stale: 60 * 1000
+      })
+      .then(function() {
+        self.db.createReadStream()
         .on('data', function(data) {
           if (data.key == LAST_ID_KEY) {
             self.last_id = data.value;
@@ -124,6 +142,10 @@ var LevelDBStore = Reflux.createStore({
         .on('end', function() {
           resolve(Promise.all(entries));
         });
+      });
+    })
+    .tap(function() {
+      return unlock(LOCKFILE_PATH);
     });
   },
   checkPassword: function() {
