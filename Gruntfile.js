@@ -56,6 +56,8 @@ module.exports = function(grunt) {
       path.join(__dirname, "/public/data.leveldb"),
       path.join(__dirname, "/public/data.*.leveldb"),
       path.join(__dirname, "/public/data.leveldb.*"),
+      path.join(__dirname, "/public/settings.leveldb"),
+      path.join(__dirname, "/public/settings.leveldb.*"),
     ],
     electron: {
       mac: {

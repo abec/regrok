@@ -9,12 +9,17 @@ A basic journal application for desktop environments with application level encr
 3. Tagging for ease of personal data collection in a secure way (Under development)
 
 ## Installation
-1. git clone https://github.com/abec/regrok.git
-2. cd regrok
-3. npm install
-4. grunt build
-5. mv dist/*/ReGrok.app ~/Dropbox
-6. open ~/Dropbox/ReGrok.app
+1. Download ReGrok and copy to /Applications/.
+2. Open /Applications/ReGrok.app.
+3. Type in a password, change the action from "login" to "register", and click the button.
+
+## Usage
+##### 1. Login
+![Login](https://raw.githubusercontent.com/abec/regrok/master/docs/img/login.png)
+##### 2. Add a journal entry
+![Add a journal entry](https://raw.githubusercontent.com/abec/regrok/master/docs/img/add-entry.png)
+##### 3. Manage it in list
+![List of journals](https://raw.githubusercontent.com/abec/regrok/master/docs/img/manage-entries.png)
 
 ## Roadmap
 
