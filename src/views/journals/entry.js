@@ -5,8 +5,8 @@ var _ = require('underscore'),
     Panel = require('react-bootstrap').Panel,
     React = require('react');
 
-var actions = require('../../actions'),
-    store = require('../../stores');
+var actions = require('../../actions/entries.js'),
+    Store = require('../../stores/repositories');
 
 module.exports = React.createClass({
   mixins: [History],

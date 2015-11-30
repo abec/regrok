@@ -4,8 +4,8 @@ var History = require('react-router').History,
     React = require('react'),
     Reflux = require('reflux');
 
-var Actions = require('../../actions'),
-    Store = require('../../stores');
+var Actions = require('../../actions/entries.js'),
+    Store = require('../../stores/repositories');
 
 module.exports = React.createClass({
   mixins: [History, Reflux.listenTo(Store, "onUpdate")],

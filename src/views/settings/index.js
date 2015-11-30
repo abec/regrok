@@ -5,16 +5,21 @@ var History = require('react-router').History,
     Reflux = require('reflux'),
     _ = require('underscore');
 
-var Actions = require('../../actions'),
-    Store = require('../../stores'),
+var Actions = require('../../actions/settings.js'),
+    Store = require('../../stores/settings.js'),
     Config = require('../../config');
 
 module.exports = React.createClass({
-  mixins: [History],
+  mixins: [History, Reflux.listenTo(Store, "onUpdate")],
   getInitialState: function() {
     return {
       "repository-leveldb-path": Config.get("repository:leveldb:path")
     };
+  },
+  onUpdate: function(data) {
+    if (!data.result) console.error("We had a failure for some reason.");
+
+    this.history.pushState(null, "/");
   },
   change: function(e) {
     var state = this.state;
@@ -31,9 +36,9 @@ module.exports = React.createClass({
     this.history.pushState(null, "/");
   },
   commit: function() {
-    Config.set("repository:leveldb:path", this.refs["repository-leveldb-path"].getValue());
-    Config.save();
-    this.history.pushState(null, "/");
+    Actions.update(
+      "repository:leveldb:path",
+      this.refs["repository-leveldb-path"].getValue());
   },
   render: function() {
     return (

@@ -9,9 +9,10 @@ var _ = require('underscore'),
     Level = require('level'),
     LevelPromisify = require('level-promisify');
 
-var Actions = require('../actions'),
-    Config = require('../config'),
-    Security = require('../security');
+var Actions = require('../../actions/entries.js'),
+    Config = require('../../config'),
+    Security = require('../../security'),
+    SettingsStore = require('../settings.js');
 
 var LAST_ID_KEY = "LAST_ID",
     PASSWORD_CHECK_KEY = "PASSWORD_CHECK",
@@ -22,12 +23,10 @@ var lock = Promise.promisify(lockfile.lock),
     unlock = Promise.promisify(lockfile.unlock);
 
 var LevelDBStore = Reflux.createStore({
+  mixins: [Reflux.listenTo(SettingsStore, "onSettingsUpdate")],
   listenables: Actions,
   init: function() {
-    console.debug("Loading LevelDB Store with the path (" + Config.get("repository:leveldb:path") + ").");
-
-    this.location = Config.get("repository:leveldb:path");
-    this.security_enabled = Config.get("repository:security:enabled");
+    this.configure();
 
     this.db = null;
     this.dbpromise = null;
@@ -35,6 +34,13 @@ var LevelDBStore = Reflux.createStore({
 
     this.ready = false;
     this.password = null;
+
+    this.listenTo(SettingsStore, this.onSettingsUpdate);
+  },
+  onSettingsUpdate: function() {
+    // Reload database whenever the location of the database changes.
+    this.configure();
+    this.reload();
   },
   onReady: function() {
     this.genericTrigger();
@@ -94,11 +100,23 @@ var LevelDBStore = Reflux.createStore({
     this.genericTrigger();
   },
 
+  configure: function() {
+    this.location = Config.get("repository:leveldb:path");
+    this.security_enabled = Config.get("repository:security:enabled");
+  },
   load: function() {
     if (!this.dbpromise) {
+      console.debug("Loading LevelDB Store with the path (" + this.location + ").");
       this.db = Level(this.location);
       this.dbpromise = LevelPromisify(this.db);
     }
+  },
+  reload: function() {
+    if (!this.dbpromise) return;
+
+    this.db.close();
+    this.dbpromise = null;
+    this.load();
   },
   add: function(entry) {
     if (!this.dbpromise) return Promise.reject("Database has not been loaded");

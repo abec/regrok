@@ -11,8 +11,8 @@ var _ = require('underscore'),
     ReactUpdate = require('react/lib/update'),
     ReactCodeMirror = require('react-codemirror');
 
-var actions = require('../../actions'),
-    store = require('../../stores');
+var actions = require('../../actions/entries.js'),
+    Store = require('../../stores/repositories');
 
 require('codemirror/mode/markdown/markdown');
 require('codemirror/addon/mode/overlay.js');

@@ -7,7 +7,7 @@ var _ = require('underscore'),
     React = require('react'),
     Router = require('react-router').Router;
 
-var actions = require('../../actions'),
+var actions = require('../../actions/entries.js'),
     formats = require('./formats.js'),
     Griddy = require('../griddy');
 
