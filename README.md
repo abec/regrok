@@ -23,28 +23,3 @@ A basic journal application for desktop environments with application level encr
 
 ## Compatibility
 1. Mac OS X (tested with 10.11.1)
-
-## Roadmap
-
-### 0.1.0
-1. Basic client side encryption
-2. Write an entry
-3. Delete several entries
-4. List of entries
-5. Markdown support
-6. Provide some kind of meaningful errors ;)
-7. Database driven configuration through settings
-8. Mac OS X support
-
-### 0.2.0
-1. Pluggable client side encryption
-2. Update an entry
-3. Improve error handling
-4. Provide better logging
-5. Data reset
-6. Sessionization?
-
-### 0.3.0
-1. Mineable tagging
-2. File browsing in settings
-3. Windows support?
