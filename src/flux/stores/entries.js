@@ -6,6 +6,7 @@ var fs = require('fs'),
 var _ = require('underscore'),
     Promise = require('bluebird'),
     Reflux = require('reflux'),
+    Immutable = require('immutable'),
     Level = require('level'),
     LevelPromisify = require('level-promisify');
 
